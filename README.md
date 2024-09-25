@@ -8,7 +8,7 @@ Strofen att hon åkte iväg utan backspeglar blev en idé, som blev en text.
 
 ## Damen och hunden
 Kortnovell om något som hade varit något att berätta för några på jobbet.  
-[Kommer strax]
+[Här](Writing/damen_och_hunden/damen_och_hunden.html)
 
 # License
 [CC BY-NC](https://creativecommons.org/licenses/by-nc/4.0/)
