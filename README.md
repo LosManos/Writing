@@ -1,7 +1,8 @@
-# Text
-Blandade essäer, anteckningar, plotar, noveller, flash fiction.
+# Texter
+Blandade essäer, anteckningar, plotar, noveller, flash fiction.  
+[Källkod](https://losmanos.github.io/Writing/) | [Hemsida](https://github.com/losmanos/writing)
 
-## Färdiga
+## Färdiga (och nästan färdiga)
 
 ### Bye bye
 Kortnovell inspirerad av en dag när jag bara lyssnade på kvinnliga country-sångerskor. Det är inte min vanliga spis.
