@@ -18,5 +18,9 @@ Kortnovell om något som hade varit något att berätta för några på jobbet.
 En idé om att några har mer krafter än det verkar. Och att med krafter kommer ansvar.  
 [Här](Writing/att_gora_ratt_for_sig/att_gora_ratt_for_sig.html)
 
+### Bomb i rymd
+Folk som jobbar med farliga saker i rymden. Benhårda rutiner följs - men också känslan av att liv har högsta prioritet.
+[Här](Writing/bomb_i_rymd/bomb_i_rymd.html)
+
 # License
 [CC BY-NC](https://creativecommons.org/licenses/by-nc/4.0/)
