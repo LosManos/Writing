@@ -27,5 +27,9 @@ Folk som jobbar med farliga saker i rymden. Benhårda rutiner följs - men ocks�
 Ett försök på någon som är rädd för något som finns överallt men ingen ser. Lite som _[Att göra rätt för sig](Writing/att_gora_ratt_for_sig/att_gora_ratt_for_sig.html)_  
 [Här](Writing/radd_for_morkret/radd_for_morkret.html)
 
+### Sjöstaden
+En near future med en anarkistisk stadsdel som verkar fungera. Mycket övervakning och subkulturer.  
+[Här](Writing/sjostaden/sjostaden.html)
+
 # License
 [CC BY-NC](https://creativecommons.org/licenses/by-nc/4.0/)
