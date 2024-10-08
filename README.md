@@ -19,8 +19,12 @@ En idé om att några har mer krafter än det verkar. Och att med krafter kommer
 [Här](Writing/att_gora_ratt_for_sig/att_gora_ratt_for_sig.html)
 
 ### Bomb i rymd
-Folk som jobbar med farliga saker i rymden. Benhårda rutiner följs - men också känslan av att liv har högsta prioritet.
+Folk som jobbar med farliga saker i rymden. Benhårda rutiner följs - men också känslan av att liv har högsta prioritet.  
 [Här](Writing/bomb_i_rymd/bomb_i_rymd.html)
+
+### Rädd för mökret
+Ett försök på någon som är rädd för något som finns överallt men ingen ser. Lite som _[Att göra rätt för sig](Writing/att_gora_ratt_for_sig/att_gora_ratt_for_sig.html)_  
+[Här](Writing/radd_for_morkret/radd_for_morkret.html)
 
 # License
 [CC BY-NC](https://creativecommons.org/licenses/by-nc/4.0/)
