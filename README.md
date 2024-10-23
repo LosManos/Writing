@@ -34,6 +34,10 @@ Ett brödrapar som bor vid kusten och inte har alla musslorna hemma.
 [Bröderna Bengtsson och den årliga turen till ön](ideer/broderna_bengtsson/bb_och_den_arliga_turen_till_on.html) är en lite fyllehistoria på kåseriformat.  
 [Bröderna Bengtsson och Veyron](ideer/broderna_bengtsson/bb_och_veyron.html) har en inledning men själva poängen är endast en notis "skriv klart".
 
+### Flickan och draken
+Idéer om en flicka, hennes kompisar, och en drake. Allting i en miljö som mycket liknar den min dotter växte upp i. Tillfällighet? My ass.  
+[Här](ideer/flickan_och_draken/inledning1.html)  
+[Alternativt här](ideer/flickan_och_draken/inledning2.html)
 
 ### Rädd för mökret
 Ett försök på någon som är rädd för något som finns överallt men ingen ser. Lite som _[Att göra rätt för sig](ideer/att_gora_ratt_for_sig/att_gora_ratt_for_sig.html)_  
