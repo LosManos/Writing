@@ -34,6 +34,10 @@ Ett brödrapar som bor vid kusten och inte har alla musslorna hemma.
 [Bröderna Bengtsson och den årliga turen till ön](ideer/broderna_bengtsson/bb_och_den_arliga_turen_till_on.html) är en lite fyllehistoria på kåseriformat.  
 [Bröderna Bengtsson och Veyron](ideer/broderna_bengtsson/bb_och_veyron.html) har en inledning men själva poängen är endast en notis "skriv klart".
 
+### Cryo statis
+Att vakna från cryosömn borde vara en lång och obehaglig upplevelse. I mitt hövve är det en hel novell - bara själva uppvaknandet. Mycket kräks och trötthet och frysa och svettas.  
+[Här](ideer/cryo_statis/cryo_statis.html)
+
 ### Flickan och draken
 Idéer om en flicka, hennes kompisar, och en drake. Allting i en miljö som mycket liknar den min dotter växte upp i. Tillfällighet? My ass.  
 [Här](ideer/flickan_och_draken/inledning1.html)  
