@@ -55,5 +55,9 @@ En near future med en anarkistisk stadsdel som verkar fungera. Mycket övervakni
 TV-anpassad komedi om två bröder som inte har alla hönsen hemma men gillar snabba bilar och ser till att deras liv fylls med dem.  
 [Här](ideer/snabba_bilar/snabba_bilar.html)
 
+### Z-land
+Misstänker en dagdröm som är grunden till denna. I mitt hövve heter den Zombie-land psss Disney-land eller annan godtycklig nöjespark. Men det är mer en safari. Zafari. Zombierna är instängda på Manhattan och man kan göra safariresor dit.  
+[Här](ideer/zland/zland.html)
+
 # License
 [CC BY-NC](https://creativecommons.org/licenses/by-nc/4.0/)
