@@ -39,6 +39,10 @@ Idéer om en flicka, hennes kompisar, och en drake. Allting i en miljö som myck
 [Här](ideer/flickan_och_draken/inledning1.html)  
 [Alternativt här](ideer/flickan_och_draken/inledning2.html)
 
+### Högstaden
+I en framtid när världen är översvämmad. Kuststäder är översvämmade och man har byggt den nya staden ovanpå den gamla. Ju rikare man är, desto högre upp bor man. Vägar går i 3 dimensioner (istf de 2 idag)  
+[Här](ideer/hogstaden/hogstaden.html)
+
 ### Lånar kropp och jagar sig själv
 Jag tror det började som en dröm. Någon måste jaga en klon av sig själv. Det där att vakna upp och inse att man är skuldsatt till över öronen. Bokstavligen. Och man själv själv är lösningen och nästan man själv är orsaken.  
 [Här](ideer/lanar_kropp/lanar_kropp.html)
