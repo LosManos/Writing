@@ -39,6 +39,10 @@ Idéer om en flicka, hennes kompisar, och en drake. Allting i en miljö som myck
 [Här](ideer/flickan_och_draken/inledning1.html)  
 [Alternativt här](ideer/flickan_och_draken/inledning2.html)
 
+### Lånar kropp och jagar sig själv
+Jag tror det började som en dröm. Någon måste jaga en klon av sig själv. Det där att vakna upp och inse att man är skuldsatt till över öronen. Bokstavligen. Och man själv själv är lösningen och nästan man själv är orsaken.  
+[Här](ideer/lanar_kropp/lanar_kropp.html)
+
 ### Rädd för mökret
 Ett försök på någon som är rädd för något som finns överallt men ingen ser. Lite som _[Att göra rätt för sig](ideer/att_gora_ratt_for_sig/att_gora_ratt_for_sig.html)_  
 [Här](ideer/radd_for_morkret/radd_for_morkret.html)
