@@ -13,6 +13,10 @@ Strofen att hon åkte iväg utan backspeglar blev en idé, som blev en text.
 Kortnovell om något som hade varit något att berätta för några på jobbet.  
 [Här](fardiga/damen_och_hunden/damen_och_hunden.html)
 
+### Elektriska bilar
+En diskussion som blev ett gäng idéer. Jag tog ledigt från jobbet någon halvtimme och lät fingrarna släppa ut orden.  
+[Här](fardiga/elektriska_bilar/elektriska_bilar.html)
+
 ## Idéer
 
 ### Att göra rätt för sig
