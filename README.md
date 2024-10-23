@@ -20,6 +20,10 @@ En diskussion som blev ett gäng idéer. Jag tog ledigt från jobbet någon halv
 
 ## Idéer
 
+### Abort med kloning
+Om man dödar någon som är klonad, är det ett mord. Lägg till komplexiteten kring aborter. Åsiktskonflikt någon?  
+[Här]()
+
 ### Att göra rätt för sig
 En idé om att några har mer krafter än det verkar. Och att med krafter kommer ansvar.  
 [Här](ideer/att_gora_ratt_for_sig/att_gora_ratt_for_sig.html)
