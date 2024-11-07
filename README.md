@@ -33,13 +33,14 @@ Folk som jobbar med farliga saker i rymden. Benhårda rutiner följs - men ocks�
 [Här](ideer/bomb_i_rymd/bomb_i_rymd.html)
 
 ### Boogeyman
-The boogeyman är känd utomlands. Här är han monstret i garderoben. Protagonisten behöver fightas mot boogeyman men en kärlekshistoria gjorde att boogeyman är protagonistens kärlek.
+The boogeyman är känd utomlands. Här är han monstret i garderoben. Protagonisten behöver fightas mot boogeyman men en kärlekshistoria gjorde att boogeyman är protagonistens kärlek.  
 [Här](ideer/boogeyman/bookeyman.html)
 
 ### Bröderna Bengtsson
 Ett brödrapar som bor vid kusten och inte har alla musslorna hemma.  
 [Översikt](ideer/broderna_bengtsson/oversikt.md)  
 [Bröderna Bengtsson och den årliga turen till ön](ideer/broderna_bengtsson/bb_och_den_arliga_turen_till_on.html) är en lite fyllehistoria på kåseriformat.  
+[Bröderna Bengsson och den årliga turen till ön, idéer](ideer/broderna_bengtsson/bb_och_den_arliga_turen_till_on_alternativ.html)  
 [Bröderna Bengtsson och Veyron](ideer/broderna_bengtsson/bb_och_veyron.html) har en inledning men själva poängen är endast en notis "skriv klart".
 
 ### Cryo statis
