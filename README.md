@@ -69,7 +69,8 @@ Ett försök på någon som är rädd för något som finns överallt men ingen 
 
 ### Sjöstaden
 En near future med en anarkistisk stadsdel som verkar fungera. Mycket övervakning och subkulturer.  
-[Här](ideer/sjostaden/sjostaden.html)
+[Idé](ideer/sjostaden/sjostaden.html)  
+[Brandsläckning](ideer/sjostaden/brandslackning.md)
 
 ### Smålands snabbaste bilar
 TV-anpassad komedi om två bröder som inte har alla hönsen hemma men gillar snabba bilar och ser till att deras liv fylls med dem.  
