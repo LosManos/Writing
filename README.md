@@ -32,6 +32,10 @@ En idé om att några har mer krafter än det verkar. Och att med krafter kommer
 Folk som jobbar med farliga saker i rymden. Benhårda rutiner följs - men också känslan av att liv har högsta prioritet.  
 [Här](ideer/bomb_i_rymd/bomb_i_rymd.html)
 
+### Boogeyman
+The boogeyman är känd utomlands. Här är han monstret i garderoben. Protagonisten behöver fightas mot boogeyman men en kärlekshistoria gjorde att boogeyman är protagonistens kärlek.
+[Här](ideer/boogeyman/bookeyman.html)
+
 ### Bröderna Bengtsson
 Ett brödrapar som bor vid kusten och inte har alla musslorna hemma.  
 [Översikt](ideer/broderna_bengtsson/oversikt.md)  
