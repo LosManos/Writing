@@ -85,5 +85,9 @@ TV-anpassad komedi om två bröder som inte har alla hönsen hemma men gillar sn
 Misstänker en dagdröm som är grunden till denna. I mitt hövve heter den Zombie-land psss Disney-land eller annan godtycklig nöjespark. Men det är mer en safari. Zafari. Zombierna är instängda på Manhattan och man kan göra safariresor dit.  
 [Här](ideer/zland/zland.html)
 
+### Återvändarna
+En samling idéer kring att vara strandsatt i rymden, mänsklighetens utrotande, och jag vet inte vad.  
+[Här](ideer/atervandarna/atervandarna.html)
+
 # License
 [CC BY-NC](https://creativecommons.org/licenses/by-nc/4.0/)
