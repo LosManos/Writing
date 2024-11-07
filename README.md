@@ -68,6 +68,10 @@ Hur tar vi VR vidare? Kan man blanda film, vr, och berättelser à la böcker oc
 Jag tror det började som en dröm. Någon måste jaga en klon av sig själv. Det där att vakna upp och inse att man är skuldsatt till över öronen. Bokstavligen. Och man själv själv är lösningen och nästan man själv är orsaken.  
 [Här](ideer/lanar_kropp/lanar_kropp.html)
 
+### På tre hjul till Öland
+Att åka flakmoppe från Göteborg till Öland är en typisk 3-ölsidé.  
+[Här](ideer/pa_tre_hjul_till_oland/pa_tre_hjul_till_oland.html)
+
 ### Rädd för mökret
 Ett försök på någon som är rädd för något som finns överallt men ingen ser. Lite som _[Att göra rätt för sig](ideer/att_gora_ratt_for_sig/att_gora_ratt_for_sig.html)_  
 [Här](ideer/radd_for_morkret/radd_for_morkret.html)
