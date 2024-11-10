@@ -85,6 +85,11 @@ En near future med en anarkistisk stadsdel som verkar fungera. Mycket övervakni
 TV-anpassad komedi om två bröder som inte har alla hönsen hemma men gillar snabba bilar och ser till att deras liv fylls med dem.  
 [Här](ideer/snabba_bilar/snabba_bilar.html)
 
+### Surt regn
+Inspirerad av scenen i Blade Runner där Deckard äter vid en matvagn. En dystopi med surt regn. Protagonisten är matinspektör.  
+Stor chans detta skrevs efter jag läst Naomi Kleins No Logo.  
+[Här](ideer/surt_regn/surt_regn.html)
+
 ### Z-land
 Misstänker en dagdröm som är grunden till denna. I mitt hövve heter den Zombie-land psss Disney-land eller annan godtycklig nöjespark. Men det är mer en safari. Zafari. Zombierna är instängda på Manhattan och man kan göra safariresor dit.  
 [Här](ideer/zland/zland.html)
