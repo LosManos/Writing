@@ -95,6 +95,10 @@ Inspirerad av scenen i Blade Runner där Deckard äter vid en matvagn. En dystop
 Stor chans detta skrevs efter jag läst Naomi Kleins No Logo.  
 [Här](ideer/surt_regn/surt_regn.html)
 
+### Tidig företagsamhet
+Liggandes på en strand dagdrömde jag fram en pojk/ungdom som började med företagsamhet tidigt genom att samla ihop kvarglömda prylar och ge tillbaka till de som glömt.
+[Här](ideer/tidig_foretagsamhet/tidig_foretagsamhet.html)
+
 ### Z-land
 Misstänker en dagdröm som är grunden till denna. I mitt hövve heter den Zombie-land psss Disney-land eller annan godtycklig nöjespark. Men det är mer en safari. Zafari. Zombierna är instängda på Manhattan och man kan göra safariresor dit.  
 [Här](ideer/zland/zland.html)
