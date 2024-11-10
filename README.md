@@ -22,6 +22,11 @@ En drömsk dikt(?) om dröm och verklighet.
 En diskussion som blev ett gäng idéer. Jag tog ledigt från jobbet någon halvtimme och lät fingrarna släppa ut orden.  
 [Här](fardiga/elektriska_bilar/elektriska_bilar.html)
 
+### Syster Yster och chokladbollarna
+Baserat på en verklig händelse.
+En novell kring att vilja så väl och sociala regler. Kan inte berätta mer utan att avslöja slutet.
+[Här](fardiga/syster_yster_och_chokladbollarna/system_yster_och_chokladbollarna.html)
+
 ## Idéer
 
 ### Abort med kloning
