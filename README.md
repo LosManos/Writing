@@ -24,8 +24,14 @@ En diskussion som blev ett gäng idéer. Jag tog ledigt från jobbet någon halv
 
 ### Syster Yster och chokladbollarna
 Baserat på en verklig händelse.
-En novell kring att vilja så väl och sociala regler. Kan inte berätta mer utan att avslöja slutet.
+En novell kring att vilja så väl och sociala regler. Kan inte berätta mer utan att avslöja slutet.  
 [Här](fardiga/syster_yster_och_chokladbollarna/system_yster_och_chokladbollarna.html)
+
+### Urban social kompetens
+För att kunna skriva atonal musik måste man förstå tonal musik.  
+För att kunna bryta mot grammatiken måste man kunna den.  
+För att kunna bryta de sociala reglerna måste man kunna dem.  
+[Här](fardiga/urban_social_kompetens/urban_social_kompetens.html)
 
 ## Idéer
 
