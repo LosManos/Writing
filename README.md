@@ -84,6 +84,10 @@ Hur tar vi VR vidare? Kan man blanda film, vr, och berättelser à la böcker oc
 Jag tror det började som en dröm. Någon måste jaga en klon av sig själv. Det där att vakna upp och inse att man är skuldsatt till över öronen. Bokstavligen. Och man själv själv är lösningen och nästan man själv är orsaken.  
 [Här](ideer/lanar_kropp/lanar_kropp.html)
 
+### Me, myself, and I
+Världen är full med historier om folk som klonas.  
+[Här](ideer/me_myself_and_i/me_myself_and_i.html) är en till.
+
 ### På tre hjul till Öland
 Att åka flakmoppe från Göteborg till Öland är en typisk 3-ölsidé.  
 [Här](ideer/pa_tre_hjul_till_oland/pa_tre_hjul_till_oland.html)
