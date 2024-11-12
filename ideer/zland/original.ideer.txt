@@ -1,0 +1,26 @@
+*** Zombieland ***
+
+/* Zombier tar ˆver Manhattan och ˆn lÂses av ‡ la Flykten frÂn New york.  En entreprenˆr kˆper allt fˆr en krona och bygger en nˆjespark av det.  Man kan Âka in och skjuta zombier.  Han satsar pÂ lite dyrare turer.
+Det r‰cker inte med ett enkelt bett fˆr att bli smittad och det tar 7 dagar fˆr smittan att bryta ut.  D‰rfˆr ‰r det 8 dagars karant‰n innan man kommer ut.  Hotellet har rullande schema och man fÂr ett diplom "zombie land" n‰r man kommer in pÂ hotellet och ett "jag ˆverlevde" n‰r man fÂr lov att l‰mna hotellet.
+
+NÂgra ‰r sÂ oroliga att bli zombier av bett att de visar alla symptom.
+Det ‰r coolt att anv‰nda fÂ och smÂ vapen.  Att ta zombier med kniv ‰r det fr‰ckaste.
+
+"Alla" vet att am milit‰ren har egna l‰ger med zombier att experimentera pÂ.  ƒgaren till zombie land vet att milit‰rerna ibland gÂr in och stj‰l hans zombies.
+
+?
+Eftersom entreprenˆren ‰ger manhattan slÂr statlig anti trust till och tvingar honom att ˆppna Ât andra.  Olika fˆretag har olika ingÂngar, typiskt d‰r det gÂr broar idag men inte nˆdv‰ndigt, och konkurrerar med varandra.
+?
+
+Eftersom folk skjuter skarpt i zombieland sl‰pps endast fÂ grupper in Ât gÂngen.  De fÂr s‰kert omrÂden att hÂlla sig i.
+
+FÂngar fÂr inte anv‰ndas fˆr arbete i zombieland men det finns s‰kert tillf‰llen dÂ livstidare har bytt sin fÂngenskap mot en chans i zombieland.  Man har sett zombier i orange fÂngkl‰der.  Det gick inte sÂ bra fˆr dem man kan t‰nka.
+
+*/
+/*
+Kan det vara sÂ att det finns nanoteknik.  Man anv‰nder nanorobotar fˆr att ta bort en sjukdom, t.ex. cancer.  Det g‰ller sedan att n‰r cancern ‰r bort att det finns lika mÂnga antinanorobotar.  NÂgot gÂr fel och folk har robotar i sig.  T.ex. blodtransfusion, blood sports, vÂld etc.
+Det gÂr bra tills huden fÂr sol pÂ sig, en viss frekvens, dÂ fˆrst bryter de ut.  Och man blir zombie.
+Eller tv‰rtom, bara en viss frekvensk de klarar sÂ de kan leva i grottor med monokromatiskt ljus utan att bli zombier.
+Det skapar en extra twist d‰r folk hÂller sig i mˆrkret eller i alla fall undan dagsljus.
+*/
+

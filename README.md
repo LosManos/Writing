@@ -126,7 +126,13 @@ Liggandes på en strand dagdrömde jag fram en pojk/ungdom som började med för
 
 ### Z-land
 Misstänker en dagdröm som är grunden till denna. I mitt hövve heter den Zombie-land psss Disney-land eller annan godtycklig nöjespark. Men det är mer en safari. Zafari. Zombierna är instängda på Manhattan och man kan göra safariresor dit.  
-[Här](ideer/zland/zland.html)
+[Här](ideer/zland/zland.html)  
+[Inledning](ideer/zland/inledning.html)  
+[Idéer](ideer/zland/ideer.html)  
+[Inledning](ideer/zland/ideer.html)  
+[Presentation 1](ideer/zland/presentation_av_jz.html) av Johnny Z  
+[Presentation 2](ideer/zland/presentation_av_jz_2.html) av Johnny Z  
+[Början på en rolig variant](ideer/zland/zland_rolig.html) som aldrig blev rolig.
 
 ### Återvändarna
 En samling idéer kring att vara strandsatt i rymden, mänsklighetens utrotande, och jag vet inte vad.  
