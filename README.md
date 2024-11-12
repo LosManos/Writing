@@ -97,7 +97,7 @@ Ett försök på någon som är rädd för något som finns överallt men ingen 
 [Här](ideer/radd_for_morkret/radd_for_morkret.html)
 
 ### Sjöstaden
-En near future med en anarkistisk stadsdel som verkar fungera. Mycket övervakning och subkulturer.  
+En near future med en anarkistisk stadsdel som verkar fungera. Mycket övervakning och subkulturer.
 [Idé](ideer/sjostaden/sjostaden.html)  
 [Brandsläckning](ideer/sjostaden/brandslackning.html)
 [Haltande persongalleri](ideer/sjostaden/persongalleri.html)
