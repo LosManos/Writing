@@ -75,6 +75,7 @@ Idéer om en flicka, hennes kompisar, och en drake. Allting i en miljö som myck
 ### Högstaden
 I en framtid när världen är översvämmad. Kuststäder är översvämmade och man har byggt den nya staden ovanpå den gamla. Ju rikare man är, desto högre upp bor man. Vägar går i 3 dimensioner (istf de 2 idag)  
 [Här](ideer/hogstaden/hogstaden.html)
+[Haltande persongalleri](ideer/sjostaden/persongalleri.html)
 
 ### Internaktiv VR-filmer och historier
 Hur tar vi VR vidare? Kan man blanda film, vr, och berättelser à la böcker och drakar och demoner?  
@@ -100,7 +101,15 @@ Ett försök på någon som är rädd för något som finns överallt men ingen 
 En near future med en anarkistisk stadsdel som verkar fungera. Mycket övervakning och subkulturer.
 [Idé](ideer/sjostaden/sjostaden.html)  
 [Brandsläckning](ideer/sjostaden/brandslackning.html)
-[Haltande persongalleri](ideer/sjostaden/persongalleri.html)
+
+### Skimmer
+En främmande värld. Rymdskeppet är utbytt mot en sorts klumpig ekranoplan som flyger över land. Det är piloten, mekanikern och liftaren. De förra smugglar enkelt gods som skyltdockor. Den senare har brokig bakgrund, antagligen med förbjudna implantat.  
+De håller sig utanför lagen och råkar ut för äventyr.  
+[Bord fixar motorn](ideer/skimmer/bord_fixar_motor.html)  
+[Bord går in i motonr](ideer/skimmer/bord_in_i_motor.html)  
+[Bordning](ideer/skimmer/bordning.html)  
+[Presentation](ideer/skimmer/presentation_av_autonomt_flyg.html) av autonomt flyg
+
 
 ### Smålands snabbaste bilar
 TV-anpassad komedi om två bröder som inte har alla hönsen hemma men gillar snabba bilar och ser till att deras liv fylls med dem.  
