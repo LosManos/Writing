@@ -98,7 +98,7 @@ Ett försök på någon som är rädd för något som finns överallt men ingen 
 [Här](ideer/radd_for_morkret/radd_for_morkret.html)
 
 ### Sjöstaden
-En near future med en anarkistisk stadsdel som verkar fungera. Mycket övervakning och subkulturer.
+En near future med en anarkistisk stadsdel som verkar fungera. Mycket övervakning och subkulturer.  
 [Idé](ideer/sjostaden/sjostaden.html)  
 [Brandsläckning](ideer/sjostaden/brandslackning.html)
 
@@ -121,7 +121,7 @@ Stor chans detta skrevs efter jag läst Naomi Kleins No Logo.
 [Här](ideer/surt_regn/surt_regn.html)
 
 ### Tidig företagsamhet
-Liggandes på en strand dagdrömde jag fram en pojk/ungdom som började med företagsamhet tidigt genom att samla ihop kvarglömda prylar och ge tillbaka till de som glömt.
+Liggandes på en strand dagdrömde jag fram en pojk/ungdom som började med företagsamhet tidigt genom att samla ihop kvarglömda prylar och ge tillbaka till de som glömt.  
 [Här](ideer/tidig_foretagsamhet/tidig_foretagsamhet.html)
 
 ### Z-land
