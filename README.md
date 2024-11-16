@@ -13,8 +13,9 @@ En sådan där rolig historia som inte har en bra poäng men inte heller når ri
 [Här](fardiga/astronavigering/astronavigering.html)
 
 ### Broken leg
-"A hard core short story. Mr Rufus is tough, just like his dog McCoy. Like it or not."  
-[Förlorad för tidens tand](https://web.archive.org/web/20040203153135/http://hem.passagen.se/olafj/writing.html).
+En tuff kille och en tuff hund.  
+Jag gillade historien mer när jag skrev den än nu.  
+[Här](fardiga/broken_leg/broken_leg.html)
 
 ### Brustna hjärtans patrull
 The group [Lustans Lakejer](https://en.wikipedia.org/wiki/Lustans_Lakejer) made [a song](https://open.spotify.com/track/7hO10q3KWwvCAshOVAe4Sv?si=589f4a7f4f1a4884) which inspired me.  
