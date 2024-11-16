@@ -12,6 +12,10 @@ Min första novell. Jag minns att min första läsare skrattade högt.
 En sådan där rolig historia som inte har en bra poäng men inte heller når riktigt till Västgöta-klimax. Om man inte njute av berättelsen, så kan man njuta av dess varma sommarnatt.  
 [Här](fardiga/astronavigering/astronavigering.html)
 
+### Broken leg
+"A hard core short story. Mr Rufus is tough, just like his dog McCoy. Like it or not."  
+[Förlorad för tidens tand](https://web.archive.org/web/20040203153135/http://hem.passagen.se/olafj/writing.html).
+
 ### Bye bye
 Kortnovell inspirerad av en dag när jag bara lyssnade på kvinnliga country-sångerskor. Det är inte min vanliga spis.
 Strofen att hon åkte iväg utan backspeglar blev en idé, som blev en text.  
