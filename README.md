@@ -26,6 +26,11 @@ Strofen att hon åkte iväg utan backspeglar blev en idé, som blev en text.
 [Original](https://docs.google.com/document/d/1st2BHM741fbhMyUzrrLTbxIN_3s6V1XJRQlbjeZTXS4/)  
 [Här](fardiga/bye_bye/bye_bye.html)
 
+### Byn
+En historia för barn om tre bagare. En vuxen historia. Nä, inte det heller.  
+Historian har sina kvaliteter men är en smula rörig för en sådan som mig, som inte kan hålla isär två eller fler namn.
+[Här](fardiga/byn/byn.html)
+
 ### Damen och hunden
 Kortnovell om något som hade varit något att berätta för några på jobbet.  
 [Här](fardiga/damen_och_hunden/damen_och_hunden.html)

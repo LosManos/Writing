@@ -1,0 +1,18 @@
+# Byn
+
+Bengt gick nerför gatan i sin hemby. Eller staden som de kallade den eftersom det var den största byn inom bekvämt avstånd. Närmsta stad fnyste föraktfullt för att by-invånarna kallade sin by för stad. Det fanns ju bara en stad i denna delen av landet, och det var minsann ingen by.  
+Bengts by var trevlig och hade många små pittoreska caféer, verkstäder, viktualieaffärer, fontäner och dagdrivare. Den hade en gata som var fylld av semmel-bagare en gång om året. Resten av året var det verkstäder där. Populäraste verkstaden hette Sammys Bil. De hade nämligen det godaste kaffet.
+
+På en annan gata fanns det tre bagerier. De hade funnits längre än någon kunde komma ihåg och hade alltid legat i fejd med varandra. En dag, på sommaren, hade bagaren längst söderut på gatan fått slut på jäst. Och som alla andra gånger han hade fått slut på jästen gick han till bageriet i mitten. Där såg han en skylt: "Stadens bästa bageri" Han tackade för jästen och kvittade den mot sockret han hade lånat ut två dagar innan.  
+Hmm, tänkte bagare Sörensson, om bagare Bengtsson kan, kan väl jag också. Han tog fram ett stycke styv kartong, upptäckte att det stod Bengtsson på den, slängde den, tog fram en ny kartongbit, en tjock svart penna som luktade äckligt, en bok där han visste att det stod snygga bokstäver, två kanelbullar och ett stort stycke tålamod. Sen tog han pennan i höger hand, tungan i vänster mungipa och satte sig att skriva.  
+Bagare Norsson, som bodde i andra änden av gatan gick till Sörensson för att få ett par av hans goda kanelbullar. Han hälsade på en hund och en katt och stannade sedan upp. Han hade nämligen fått syn på en papp-skiva som hängde under bagare Bengtssons skylt. "Stans bästa bageri" läste han. Skoj, tänkte bagare Norsson och fortsatte söderut till Sörensson. Där hämtade han två bullar och läste en skylt där det stod "Världens bästa bageri" Bagare Norsson tackade för bullarna och förstod att här var det saker i görningen. Väl hemma letade han upp ett stycke kartong och började skriva med stora bokstäver.  
+Bagare Sörensson tittade på klockan och såg att hon var kvart i två. Sen tittade han mot dörren. Nu skulle nämligen bagare Bengtsson titta in och få två kanelbullar. Han kom alltid klockan kvart i två. Säkert som amen i kyrkan. Han var till och med så duktig på att komma klockan kvart i två att Sörensson ställde klockan varje dag efter Bengtsson. Det var en fin klocka, den gick nästan exakt. Den drog sig bara högst en kvart åt ena eller andra hållet. Men eftersom den ställdes varje dag, gjorde det inget. "Var är bagare Bengtsson?", tänkte Sörensson och gick ut på gatan för att se om han kanske hade stannat på vägen för att se på ekorren som bodde i en ek. Mitt på gatan stod Bengtsson. Han tittade norrut. Bagare Sörensson gick fram till Bengtsson och tittade han också. Tydligen tittade han på bagare Norsson som fixade och donade på sitt bageri. När bagare Norsson var färdig med att fixa och dona på sitt bageri, gick han till mitten av gatan för att hälsa på Sörensson och Bengtsson.
+
+Där stod de tre bagarna och tittade upp och ner längs gatan.  
+"Stadens bästa bageri" sa Bengtsson högt liksom för sig själv samtidigt som han läste det av sin skylt.  
+"Världens bästa bageri" sa Sörensson också högt liksom för sig själv.  
+"Gatans bästa bageri" sa Norsson också högt liksom för sig själv när han läste.  
+"En bra dags arbete." sa Sörensson.  
+"Här." sa Bengtsson och gav ekorren en nötkaka.  
+"En fin dag." sa Norsson.  
+Sen gick de tre kvarter åt floden till och åt glass på "Stadens bästa café.
