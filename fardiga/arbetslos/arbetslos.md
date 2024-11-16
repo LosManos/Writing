@@ -1,0 +1,28 @@
+# Arbetslös
+
+-Jaha, hur skall ni ha det?  
+-Kort i nacken men utan något stubb.  
+-Och i pannan?  
+-Lätt markerad sidbena, men vät håret först efter första klippningen, så får du rätt utseende på topparna.  
+-Förlåt?  
+-Vät håret först efter att du har klippt håret en gång.  
+-Du verkar kunna det här.  
+-Jag har själv varit frisör en gång i tiden.  
+-"En gång i tiden", du är det inte längre?  
+-Nej.  
+-Varför slutade du? Onda axlar?  
+-Jag blev avskedad. Jag är utan jobb nu.  
+-Får man fråga varför du blev avskedad?  
+-Javisst.  
+-Varför?  
+-Det var lite drygt ett år sedan, som en man kom in. Han var pratsam och helt naturligt började vi prata om allt möjligt, vädret, nyheterna & cetera. Han var i mitt tycke inte särskilt sympatisk och jag blev irriterad när han rådde mig hur jag skulle klippa honom - jag avskyr flera förare i bilen. Efter det anmärkte han på min dialekt, vilket inte brukar göra någonting, men nu var jag irriterad och det uppfattade han. Vanliga människor hade då, om inte bett om ursäkt, i alla fall tystnat, vilket inte denne man gjorde. Istället började han småretas med mig. Kom ihåg nu att jag var irriterad, annars hade jag handlat annorlunda. Han anmärkte som sagt på min dialekt och undrade hur det var på landet, om jag hade mjölkat många liter, lassat mycket hö och så vidare.  
+-Polisongerna?  
+-Bort.  
+-Och vad svarade du honom?  
+-Någonting passande. Jag kommer inte ihåg exakt vad, men det var säkert någonting avsnäsande, jag var ju rätt irriterad. Men det var sen det hände.  
+-Vaddå?  
+-Han frågade hur man märker kor.  
+-Vad gjorde du då?  
+-Klippte två jack i öronen och sa "Härmed är du döpt till 512-Rosa".  
+-Du jobbade inte så länge där?  
+-Det var min sista dag.  

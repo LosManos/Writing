@@ -4,6 +4,10 @@ Blandade essäer, anteckningar, plotar, noveller, flash fiction.
 
 ## Färdiga (och nästan färdiga)
 
+### Arbetslös
+Min första novell. Jag minns att min första läsare skrattade högt.  
+[Här](fardiga/arbetslos/arbetslos.html)
+
 ### Bye bye
 Kortnovell inspirerad av en dag när jag bara lyssnade på kvinnliga country-sångerskor. Det är inte min vanliga spis.
 Strofen att hon åkte iväg utan backspeglar blev en idé, som blev en text.  
