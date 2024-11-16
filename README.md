@@ -16,6 +16,10 @@ En sådan där rolig historia som inte har en bra poäng men inte heller når ri
 "A hard core short story. Mr Rufus is tough, just like his dog McCoy. Like it or not."  
 [Förlorad för tidens tand](https://web.archive.org/web/20040203153135/http://hem.passagen.se/olafj/writing.html).
 
+### Brustna hjärtans patrull
+The group [Lustans Lakejer](https://en.wikipedia.org/wiki/Lustans_Lakejer) made [a song](https://open.spotify.com/track/7hO10q3KWwvCAshOVAe4Sv?si=589f4a7f4f1a4884) which inspired me.  
+[Förlorad för tidens tand](https://web.archive.org/web/20040203153135/http://hem.passagen.se/olafj/writing.html).
+
 ### Bye bye
 Kortnovell inspirerad av en dag när jag bara lyssnade på kvinnliga country-sångerskor. Det är inte min vanliga spis.
 Strofen att hon åkte iväg utan backspeglar blev en idé, som blev en text.  
