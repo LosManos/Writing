@@ -8,6 +8,10 @@ Blandade essäer, anteckningar, plotar, noveller, flash fiction.
 Min första novell. Jag minns att min första läsare skrattade högt.  
 [Här](fardiga/arbetslos/arbetslos.html)
 
+### Astronavigering
+En sådan där rolig historia som inte har en bra poäng men inte heller når riktigt till Västgöta-klimax. Om man inte njute av berättelsen, så kan man njuta av dess varma sommarnatt.  
+[Här](fardiga/astronavigering/astronavigering.html)
+
 ### Bye bye
 Kortnovell inspirerad av en dag när jag bara lyssnade på kvinnliga country-sångerskor. Det är inte min vanliga spis.
 Strofen att hon åkte iväg utan backspeglar blev en idé, som blev en text.  
