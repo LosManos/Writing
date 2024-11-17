@@ -1,0 +1,14 @@
+# Hallåan han hade hört
+
+En man stod på en låda i Speaker's Corner och höll tal. Han försökte framhärda något religiöst men hade trasslat in sig i liknelser han inte kom ur.  
+Till den prekära situationen hade han kommit tack vare väl formulerade frågor från sina åhörare. När han äntligen fick åhörare, vilket egentligen var första gången, lyckades de inte bara lyssna utan även fråga så han hade snärjt in sig i logik han inte kom ur. "Vad jag försöker säga är att allt inte är som det liknar. Vissa saker liknar det de inte är. Vissa saker gör det men vissa inte. Man kan inte lita på vad man ser. Eller hör för den delen. Vad jag menar är att perceptionen inte har någon relevans. Jo. Ibland. För det mesta faktiskt." Han slog ut med händerna. Inte bara argumenten var kassa utan även formuleringen och stringensen kände han.
+
+Runt om honom stod en samling brokiga människor. Några var de som hade satt dit honom från början och två var luffare och andra var bara sådana som hade passerat men blivit nyfikna på folksamlingen. Det var självuppfyllande att människor samlas dit människor samlas. När det väl hade blivit en grupp människor kom nya dit och upprätthöll gruppen.  
+"Om vi tar ett exempel från verkligheten om att saker inte är vad de föreställer. Det finns ett radioprogram jag brukar lyssna på. Bl.a. för att hallåan har så fin röst. Hon har en riktigt bra radioröst. Dessutom är den sexig. Så när hon pratar gillar jag att bara lyssna på rösten, egentligen utan att höra vad den säger, och fantisera om henne."  
+"Hur ser hon ut?" frågade en i mängden. Antagligen var de en av de som hade argumenterat mot honom från början. Skoj att folk sa något, tråkigt att det var motargument.  
+"Jag vet inte hur hon ser ut. Jo, egentligen." Skit och, där släppte han ifrån sig en groda igen. "Jag har sett henne men kommer inte ihåg hur hon ser ut. Jag är helt kass på utseenden men bra på röster."  
+"Är hon så sexig som du säger?" frågade samme man i mängden igen.  
+"Nix. jag föreställer mig henne som lång, blond, rökfri, smal och kurvig. De enda jag kommer ihåg är att hon är kort, tjock, röker och är mörkhårig." Några kvinnor i folksamlingen blängde på honom. Det kände han. Man får inte lov att säga så; att det är bättre att vara rik och snygg än fattig och ful.  
+"Ni förstår vad jag menar? Hon ser ut på ett sätt men jag har en annan bild. Jag skulle inte känna igen henne, som jag sa är jag kass på ansikten men hon har en jättesexig röst. Och eftersom jag inte kommer ihåg hur hon ser ut föredrar jag att ha den blonda skönheten framför mig än en kort tjock sak."
+
+En liten kvinna trängde sig fram. "Skulle ni känna igen henne på rösten?" "Javisst! Som jag sa är jag..." Stopp. Tvärnit. Mannen kände rodnaden stiga och benen bli svaga. Utan att säga något gick han ner från lådan och bort.

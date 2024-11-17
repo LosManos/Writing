@@ -66,6 +66,11 @@ Saker du vill säga men inte vågar. Esprit d'escalier. Ett tidigt alster.
 Skön stämning i skriften, men jag gillar inte poängen. Dels är jag inte ensam om den - har hört den på radio och i kåseri. Dels är det inget tryck i poängen. Novellen hade dragit fördel av att skrivas om så att poängen antingen blir mer explicit, eller äts upp av något annat som är likt resten av historien. T.ex. som [Tågresan](fardiga/tagresan/tagresan.html).  
 [Här](fardiga/ungdomar_pa_tag/ungdomar_pa_tag.html)
 
+### Hallåan han hade hört
+Stolpig text, men jag blev överraskad av mitt eget slut. Fast det var givet när jag väl läst den. Protagonisten är inte tillräckligt tafflig för att upplevas tafflig. Tror jag. Precis som det du läser nu.  
+Novellen skulle tjäna på att skrivas om. Lite.  
+[Här](fardiga/hallaan/hallaan.html)
+
 ### Internet- och informationskriget
 Jag läste någonstans att gamla Östtyskland satsade på företagsspioneri och tappade förmågan att uppfinna. Jag ser idag stora företag som kämpar för att låsa fast vid befintliga affärsmodeller istället för att anamma framtiden. Jäpp, jag menar musik- och medieföretag. Jag ser firmor som köper patent för att handla med och firmor som köper patent för att inte utföra dem då de konkurrerar med deras befintliga affärer.  
 Läs [Makers av Cory Doctorow](https://craphound.com/category/makers/).  
