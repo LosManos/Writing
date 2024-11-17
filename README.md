@@ -63,7 +63,7 @@ Saker du vill säga men inte vågar. Esprit d'escalier. Ett tidigt alster.
 [Här](fardiga/enkat/enkat.html)
 
 ### Fyra ungdomar på ett tåg
-Skön stämning i skriften, men jag gillar inte poängen. Dels är jag inte ensam om den - har hört den på radio och i kåseri. Dels är det inget tryck i poängen. Novellen hade dragit fördel av att skrivas om så att poängen antingen blir mer explicit, eller äts upp av något annat som är likt resten av historien.  
+Skön stämning i skriften, men jag gillar inte poängen. Dels är jag inte ensam om den - har hört den på radio och i kåseri. Dels är det inget tryck i poängen. Novellen hade dragit fördel av att skrivas om så att poängen antingen blir mer explicit, eller äts upp av något annat som är likt resten av historien. T.ex. som [Tågresan](fardiga/tagresan/tagresan.html).  
 [Här](fardiga/ungdomar_pa_tag/ungdomar_pa_tag.html)
 
 ### Internet- och informationskriget
@@ -75,6 +75,11 @@ Läs [Makers av Cory Doctorow](https://craphound.com/category/makers/).
 Baserat på en verklig händelse.
 En novell kring att vilja så väl och sociala regler. Kan inte berätta mer utan att avslöja slutet.  
 [Här](fardiga/syster_yster_och_chokladbollarna/system_yster_och_chokladbollarna.html)
+
+### Tågresan
+Som [Fyra ungdomar på ett tåg](fardiga/ungdomar_pa_tag/ungdomar_pa_tag.html) men bättre. Här är den tvisten som saknades.  
+Idén att protagonisten pratar men blir avbruten är bra men jag är inte hundra på genomförandet. När jag läser min egen text förstår jag vad som är repliker på puben och repliker på tåget. Jag är inte säker på att det går fram för andra. Det kan lösas med formattering av texten.  
+[Här](fardiga/tagresan/tagresan.html)
 
 ### Urban social kompetens
 För att kunna skriva atonal musik måste man förstå tonal musik.  
