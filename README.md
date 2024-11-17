@@ -49,6 +49,11 @@ En drömsk dikt(?) om dröm och verklighet.
 En diskussion som blev ett gäng idéer. Jag tog ledigt från jobbet någon halvtimme och lät fingrarna släppa ut orden.  
 [Här](fardiga/elektriska_bilar/elektriska_bilar.html)
 
+### En dag förändrades världen
+En skruvad historia om kaosteori och litteraturmatematik och mest ingenting.  
+Typiskt en sådan historia som jag börjar skriva utan att veta slutet. Om denna historian är en sådan? det är fördolt i tidens dimma.  
+[Här](fardiga/en_dag_forandrades_varlden/en_dag_forandrades_varlden.html)
+
 ### Internet- och informationskriget
 Jag läste någonstans att gamla Östtyskland satsade på företagsspioneri och tappade förmågan att uppfinna. Jag ser idag stora företag som kämpar för att låsa fast vid befintliga affärsmodeller istället för att anamma framtiden. Jäpp, jag menar musik- och medieföretag. Jag ser firmor som köper patent för att handla med och firmor som köper patent för att inte utföra dem då de konkurrerar med deras befintliga affärer.  
 Läs [Makers av Cory Doctorow](https://craphound.com/category/makers/).  
