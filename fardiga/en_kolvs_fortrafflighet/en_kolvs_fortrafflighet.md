@@ -1,0 +1,13 @@
+# En kolvs förträfflighet
+
+Så kom det sig en dag att jag kom i slang med en kvinna i läder. Egentligen var jag ute och puttrade i Smålands skogar men hungern tvingade mig att stanna vid en kiosk. Och där var hon. Helt klädd i läder. Hennes hjälm hängde på en Honda VTR 1000.
+
+Eftersom jag inte hade fantasi att komma på ett sätt att inleda ett samtal så bara började jag prata. Vi snackade om lite ditt och datt och mycket kubik och cylindrar. Mest hon, hon ledde ju ligan kan man säga. Dubbelt så mycket av allting sa hon. Dubbelt för mycket av allting sa jag. Men det var trevligt och vi skulle till samma ställe så vi sa att vi slår följe. Eller som hon uttryckte det: "Om du klarar hänga med..." Jag skulle få ett försprång så jag knatade bort till hojen, grenslade och fällde ut kicken. Då blev det liv! Hon tjoade till och rusade över. "Har du en sådan? Tufft!" Så jag erbjöd henne att prova. Jag pillade lite diskret med choken för att få den lite svårstartad och kom med glada tillrop för varje spark. Låtsades lyssna till tändningen och justerade om choken för henne. Hon fick igång den och jag justerade tillbaka. Hon satte sig ner. Hon körde ett varv runt kiosken. Efter tjuvstopp alltså, hon var ju van vid att motorn justerade sitt varv samtidigt som man vred på rullen, inte sådär lite efteråt. Lite mer kickträning.
+
+"Skall vi byta?" Det var hennes ord, inte mina. "Jag vet inte..." sa jag "om du klarar tygla besten." Men hon fiskade upp sina nycklar ur fickan och kastade till mig och drog.
+
+Så där stod jag, med ett par nycklar i näven och en varmkörd VTR bredvid. Det tog ett tag att hitta startknappen, men den startade på första trycket. Där fanns så mycket. Mycket motor till att börja med; hann inte med att växla innan jag var ute på vägen och tätt bakom en bil. Mycket broms; jag nöp till och höll på att ställa cykeln på framhjulet. Obehagligt men distinkt. Mycket styre; det var lågt, stadigt och benhårt. Ingen gummiupphängning för att minska vibrationer här inte. Men jag kom ikapp min egen hoj trots tyngden på den jag körde.
+
+Det var fin utsikt. Pött pött i luften. En Yamaha SR framför. En läderklädd brutta på den. Varför hade jag monterat topbox? Ena hjärnhalvan satt och fantiserade medan den andra tittade på vägen och varvräknaren.
+
+Så småningom kom vi fram till nattplatsen och satt och tjôtade resten av kvällen. Hon hade varit mycket nöjd med turen och hon tackade mig på alla de sätt. Jag fick återigen chans att visa en kolvs förträfflighet. Att det räcker.
