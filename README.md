@@ -29,10 +29,12 @@ Strofen att hon åkte iväg utan backspeglar blev en idé, som blev en text.
 
 ### Byn
 En historia för barn om tre bagare. En vuxen historia. Nä, inte det heller.  
-Historian har sina kvaliteter men är en smula rörig för en sådan som mig, som inte kan hålla isär två eller fler namn.
+Historian har sina kvaliteter men är en smula rörig för en sådan som mig, som inte kan hålla isär två eller fler namn.  
 [Här](fardiga/byn/byn.html)
 
 ### Dagen jag körde ikapp med en Bimota
+Kappkörningens pirr och glädje, men inte på bana utan i den verkliga världen.  
+Sista meningen är jag extra nöjd med såhär 20 år senare.  
 [Här](fardiga/bimota/bimota.html)
 
 ### Damen och hunden
