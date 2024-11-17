@@ -32,6 +32,9 @@ En historia för barn om tre bagare. En vuxen historia. Nä, inte det heller.
 Historian har sina kvaliteter men är en smula rörig för en sådan som mig, som inte kan hålla isär två eller fler namn.
 [Här](fardiga/byn/byn.html)
 
+### Dagen jag körde ikapp med en Bimota
+[Här](fardiga/bimota/bimota.html)
+
 ### Damen och hunden
 Kortnovell om något som hade varit något att berätta för några på jobbet.  
 [Här](fardiga/damen_och_hunden/damen_och_hunden.html)
