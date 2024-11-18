@@ -1,0 +1,13 @@
+# Kakan
+
+Jag kommer ihåg när jag var ung. Då var gräset grönare, himlen blåare och solen gulare. Jämt. Och grädden sötare och kakorna godare. Fast inte alla kakor, inte min mosters. Hon höll nämligen inte på med mat, hon höll på med kost.  
+Kost är grovt bröd, "För det håller igång tarmarna" som moster brukade säga, vatten till maten, ingen sylt på smörgåsen, bortskuret fett från skinkan och Glaubersalt på kvällen. När vi kom på besök brukade moster krama om oss, klämma oss på överarmarna, och känna efter hullet på magen. Sen tittade hon på mamma med ena ögat och oss med det andra och frågade "Får de ordentlig kost?" Mamma sa att visst fick vi det.  
+Pappa låtsades inte höra. För en gång hade han sagt "Nämen så smal du har blivit!" till moster. Moster visste inte om han skojade eller om hon skulle tacka för komplimangen. Hon bestämde sig för att det var en komplimang. Just som hon var på väg att tacka sa pappa "Nä, jag bara skojade."  
+Han är lite okänslig ibland, pappa.
+
+Detta var vi barn helt ovetande om för vi hade redan sprungit ut på mosters stora gräsmatta där vi satte tillbaka de gröna fläckar som mamma innan hade tvättat bort. Dessa gröna fläckar gjorde att vi inte fick sitta i soffan som de vuxna när det var kakdags.  
+Moster hade alltid sju sorters kakor. En dag hade hon bakat semlor åt oss också. Det är det bästa jag vet. Näst gräddtårta. Med mycket hallon. Vi barn kunde knappt sitta stilla när semlorna bars fram. De såg jättegoda ut, även om de hade lite lite grädde på, men det var bra ändå för moster. De var också lite mörka. Och inget florsocker på locket. Men locket var i allafall trekantigt.  
+Moster undrade om grädden smakade bra, den hade nämligen gått över datum. Jag slickade en stor bit grädde och svarade att "jaa, det gör den". Men ingen åt upp hela sin semla i allafall för moster hade gjort kost av semlor också! Hon hade tänkt att vi kanske skulle bli hårda i magen av alla kakor, och för att det inte skulle vara hennes fel hade hon blandat råg i bullarna.  
+Alla skyllde på att grädden nog smakade surt ändå.  
+Jag slickade ur mandelmassan ur mitten och den var god även om det var kli i den. Tydligen slickade jag ur den så ljudligt att både mamma och moster tittade. Men det var nog bra gjort för jag fick kakfatet med orden "Ni barn kan dela på dessa kakor. Ute."  
+Vi sprang längst bort i trädgården och satte oss ner och delade kakorna rättvist. Jag försökte med en till mig och en till er men det gick inte. När kakorna var uppdelade blev Bengt av med en tand, men det gjorde inget, för den var ändå lös. Moster har gjort kost av kakor också. Det var de hårdaste kakor jag någonsin aldrig har ätit. Så vi tävlade istället. Jag vann. Jag lyckades pricka tre skator och ett växthus.
