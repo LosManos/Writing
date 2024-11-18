@@ -98,6 +98,10 @@ Jag får slå isär historierna en dag.
 En inte så bra historia. Grundidén håller men genomförandet hade kunnat bli roligare. Eventuellt läsvärd ändå.  
 [Här](fardiga/kakan/kakan.html)
 
+### Klockradion
+En liten söt historia om sex och kärlek.  
+[Här](fardiga/kakan/kakan.html)
+
 ### Syster Yster och chokladbollarna
 Baserat på en verklig händelse.
 En novell kring att vilja så väl och sociala regler. Kan inte berätta mer utan att avslöja slutet.  
