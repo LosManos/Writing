@@ -89,6 +89,11 @@ Jag läste någonstans att gamla Östtyskland satsade på företagsspioneri och 
 Läs [Makers av Cory Doctorow](https://craphound.com/category/makers/).  
 [Här](ideer/internetkriget/internetkriget.html)
 
+### Jesus
+Detta är egentligen två historier. Den första om ett syskonpar och ett practical joke som gick snett. Det andra om två kärlekskranka ungdomar som letar kärlek överallt.  
+Jag får slå isär historierna en dag.  
+[Här](fardiga/jesus/jesus.html)
+
 ### Syster Yster och chokladbollarna
 Baserat på en verklig händelse.
 En novell kring att vilja så väl och sociala regler. Kan inte berätta mer utan att avslöja slutet.  
