@@ -1,0 +1,20 @@
+# Hundra kronor till mig!
+
+Det hela började med ett historieprov.
+
+Bengt hade alla rätt. Eller skulle haft om han inte hade glömt en hel fråga. Så han missade två poäng. En hel fråga! Två hela poäng! Egentligen skulle han ha alla rätt, antingen få skriva frågan i efterhand eller få sänkt maxpoäng på provet. Det skulle inte vara mer än rätt. Han hade ju glömt frågan, det kan väl vem som helst göra. En enda liten fråga. Den syntes ju knappt. Stod längst ner på sidan också. Under den enpoängaren han hade skrivit sju rader om. Då är det ju lätt att missa en enda liten fråga. Så egentligen hade han ju alla rätt. Det kan väl vem som helst förstå. Alla rätt.   Egentligen alltså.  
+Så fortsatte det i tre dagar.
+
+Vanligtvis höll han på i två dagar, men den här gången var det tydligen något alldeles extra att inte få alla rätt. Eller så var det det att han inte fick någon respons på sitt tjat om förlorade poäng. Innan provresultaten hade kommit tillbaka var han missnöjd eftersom provet hade gått jättedåligt. Han hade missat i allafall tio poäng. Och det är mycket det. Lika många poäng som han trodde han hade missat på provet innan, där han turligt nog fick alla rätt minus tre poäng. Han hade ju glömt en fråga. En enda liten fråga. Det kan väl vem som helst göra. Annars hade han fått alla rätt.  
+Sådan är Bengt.
+
+Vanligtvis kverulerade han i två dagar och lyckades på denna tid få svar hela skalan från "vad synd", "jaha" och "har du inte sagt det förut"; över total ignorans och befinna-sig-i-ett-annat-rum; ända till "Är du säker på att det är straffbart med mord?". Denna gång höll han ut i tre dagar och lugnade ner sig först när en bok passerade hans huvud med någon millimeters marginal. Den hade träffat klockrent om han inte hade böjt sig ner efter sin penna.  
+Boken var "De tre musketörerna" och den lämnades tillbaka till avsändaren utan ett ord från läraren. En mycket förstående lärare.
+
+Dagar passerade och det blev dags för ett nytt prov. Viss vadslagning förekom om hur länge Bengt skulle klaga på rättningen. De flesta trodde två eller tre dagar, tre trodde fyra dagar och en galning höll på en vecka, det var ju snart betygsdags. Läraren som skulle rätta provet trodde på två dagar. Rektorn sa att det inte fick förekomma vadslagning på skolan, också två dagar. Fyra satsade sina pengar på noll dagar, de sa att de hade en plan.  
+Sanningen var att de faktiskt hade en plan. Den var utarbetad i en mörk städskrubb under hemliga förhållanden. De hade spottat varandra i handflatorna och tummat på det. De hade lovat kittling till döds åt den som backade ut. De hade satsat 25 kronor per skalle, vilket de hade växlat till en hundring och lagt i ett hemligt skrin. De skulle rädda världen. En för alla, alla för en.
+
+Provet kom och gick. Ingen frågade Bengt hur det hade gått, det talade han om för dem ändå. Det hade gått jätte-dåligt, han hade missat jallafall tio poäng. Så många missade poäng räcker i och för sig fortfarande till en femma, men han borde ha klarat sig bättre. Allt var som vanligt utom en liten sak, det låg en hundring instucken i Bengts prov. Bengt visste inte om den. Inte många visste om den, endast fyra stycken och de sa inget. En av de fyra hade smugit in sedeln i Bengts prov när han hade lämnat in. Där låg nu en bomb och väntade på att brisera. En muta sågs inte med blida ögon. Bengt skulle inte bli relegerad, men det skulle bli ett väldigt liv.
+
+Provet kom tillbaka och insatser till vadslagningen avbröts. De fyra kunde håva in potten. Bengt hade fått alla rätt och då kunde han omöjligen klaga. Han klagade inte heller ty läraren hade varit så nöjd med hans resultat att han hade tejpat fast en hundring med texten "Gör aldrig om det.".  
+Jo det gör jag gärna om tänkte Bengt, att få alla rätt är inte dumt. Helst inte om man är så duktig att man får en sådan guld-stjärna av läraren.
