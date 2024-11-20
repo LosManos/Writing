@@ -102,6 +102,10 @@ En inte så bra historia. Grundidén håller men genomförandet hade kunnat bli 
 En liten söt historia om sex och kärlek.  
 [Här](fardiga/kakan/kakan.html)
 
+### Kottar
+Den här historien skrev jag under en tid av mitt liv när jag inte var så förtjust i moderna leksaker. Jag är fortfarande skeptisk. Men jag skriver förhoppningsvis bättre idag - för historien är inte så bra.  
+[Här](fardiga/kottar/kottar.html)
+
 ### Syster Yster och chokladbollarna
 Baserat på en verklig händelse.
 En novell kring att vilja så väl och sociala regler. Kan inte berätta mer utan att avslöja slutet.  
