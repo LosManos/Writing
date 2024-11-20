@@ -106,6 +106,12 @@ En liten söt historia om sex och kärlek.
 Den här historien skrev jag under en tid av mitt liv när jag inte var så förtjust i moderna leksaker. Jag är fortfarande skeptisk. Men jag skriver förhoppningsvis bättre idag - för historien är inte så bra.  
 [Här](fardiga/kottar/kottar.html)
 
+### Kändis
+De finns de som är imponerade av kändisar. Jag tillhör inte dem. En väns flickvän tillhör däremot dem och en dag kom hon hem med ett "Vet du vem jag har sett?"  
+Hur skulle jag kunna veta det?  
+Men det inspirerade mig att skriva.  
+[Här](fardiga/kandis/kandis.html)
+
 ### Syster Yster och chokladbollarna
 Baserat på en verklig händelse.
 En novell kring att vilja så väl och sociala regler. Kan inte berätta mer utan att avslöja slutet.  
