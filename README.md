@@ -132,6 +132,10 @@ För att kunna bryta mot grammatiken måste man kunna den.
 För att kunna bryta de sociala reglerna måste man kunna dem.  
 [Här](fardiga/urban_social_kompetens/urban_social_kompetens.html)
 
+### Vendettafolk
+En hardcore-variant med Rufus, samme figur som i [Broken leg](fardiga/broken_leg/broken_leg.html)  
+Den har tyvärr gått [förlorad för tidens tand](https://web.archive.org/web/20050912000000*/http://hem.passagen.se:80/olafj/noveller/vendettafolk.html) Någon med mer XP än jag kan kanske få fram den?
+
 ## Idéer
 
 ### Abort med kloning
