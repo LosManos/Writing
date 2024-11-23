@@ -128,6 +128,10 @@ En mycket kort historia, inspirerad av en tjej som inte var jättesmart.
 5 rader text.  
 [Förlorad för tidens tand](https://web.archive.org/web/20050912000000*/http://hem.passagen.se/olafj/noveller/semantik.html) Kan någon med mer skillz än jag få fram den?
 
+### Städa!
+En av mina tidigare alster. Det är sällan jag skriver tragedier - detta är en av de få.  
+[Här](fardiga/stada/stada.html)
+
 ### Syster Yster och chokladbollarna
 Baserat på en verklig händelse.
 En novell kring att vilja så väl och sociala regler. Kan inte berätta mer utan att avslöja slutet.  
