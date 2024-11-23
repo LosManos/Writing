@@ -128,6 +128,10 @@ En mycket kort historia, inspirerad av en tjej som inte var jättesmart.
 5 rader text.  
 [Förlorad för tidens tand](https://web.archive.org/web/20050912000000*/http://hem.passagen.se/olafj/noveller/semantik.html) Kan någon med mer skillz än jag få fram den?
 
+### Stereon
+On någon som försöker förklara "mitt" och "ditt" för en främling. Ryktet säger att historien är helt ok.  
+[Men tidens tand har ödelagt den](https://web.archive.org/web/20050201000000*/http://hem.passagen.se/olafj/noveller/stereon.html) Kan någon med mer kunskap än jag leta fram den?
+
 ### Städa!
 En av mina tidigare alster. Det är sällan jag skriver tragedier - detta är en av de få.  
 [Här](fardiga/stada/stada.html)
