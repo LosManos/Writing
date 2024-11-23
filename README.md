@@ -141,6 +141,10 @@ Baserat på en verklig händelse.
 En novell kring att vilja så väl och sociala regler. Kan inte berätta mer utan att avslöja slutet.  
 [Här](fardiga/syster_yster_och_chokladbollarna/system_yster_och_chokladbollarna.html)
 
+### Thailand
+Jag var på rekognoseringstur för segling i Thailand och skrev dagbok. Detta skall vara den men...  
+[...den är förlorad](https://web.archive.org/web/20021101000000*/http://hem.passagen.se/olafj/noveller/Thailand.html)
+
 ### Tågresan
 Som [Fyra ungdomar på ett tåg](fardiga/ungdomar_pa_tag/ungdomar_pa_tag.html) men bättre. Här är den tvisten som saknades.  
 Idén att protagonisten pratar men blir avbruten är bra men jag är inte hundra på genomförandet. När jag läser min egen text förstår jag vad som är repliker på puben och repliker på tåget. Jag är inte säker på att det går fram för andra. Det kan lösas med formattering av texten.  
