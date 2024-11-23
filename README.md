@@ -124,6 +124,10 @@ En historia om när jag ominstallerade en dator hemma. MIna anteckningar säger 
 En mycket kort historia, inspirerad av en tjej som inte var jättesmart.  
 [Förlorad för tidens tand](https://web.archive.org/web/20051015000000*/http://hem.passagen.se/olafj/noveller/rulla_kulan_i_evighet.html)
 
+### Semantik
+5 rader text.  
+[Förlorad för tidens tand](https://web.archive.org/web/20050912000000*/http://hem.passagen.se/olafj/noveller/semantik.html) Kan någon med mer skillz än jag få fram den?
+
 ### Syster Yster och chokladbollarna
 Baserat på en verklig händelse.
 En novell kring att vilja så väl och sociala regler. Kan inte berätta mer utan att avslöja slutet.  
