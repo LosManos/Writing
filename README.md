@@ -116,22 +116,6 @@ Men det inspirerade mig att skriva.
 En tråkigt men helt korrekt återberättad historia från en segeltur jag och min kusin hade. Alltså; flera händelser var roliga men berättelsen är tråkigt berättad. Som en dagbog rätt upp och ner änna.  
 [Här](fardiga/puffin_ankare_marulk/puffin_ankare_marulk.html    )
 
-### Reboot
-En historia om när jag ominstallerade en dator hemma. MIna anteckningar säger att den kan vara rolig om man gillar datorer.  
-[Förlorad för tidens tand](https://web.archive.org/web/20051015000000*/http://hem.passagen.se/olafj/noveller/reeboot.htm) Någon med mer XP än jag kan kanske få fram den?
-
-### Rulla kulan i evighet
-En mycket kort historia, inspirerad av en tjej som inte var jättesmart.  
-[Förlorad för tidens tand](https://web.archive.org/web/20051015000000*/http://hem.passagen.se/olafj/noveller/rulla_kulan_i_evighet.html)
-
-### Semantik
-5 rader text.  
-[Förlorad för tidens tand](https://web.archive.org/web/20050912000000*/http://hem.passagen.se/olafj/noveller/semantik.html) Kan någon med mer skillz än jag få fram den?
-
-### Stereon
-On någon som försöker förklara "mitt" och "ditt" för en främling. Ryktet säger att historien är helt ok.  
-[Men tidens tand har ödelagt den](https://web.archive.org/web/20050201000000*/http://hem.passagen.se/olafj/noveller/stereon.html) Kan någon med mer kunskap än jag leta fram den?
-
 ### Städa!
 En av mina tidigare alster. Det är sällan jag skriver tragedier - detta är en av de få.  
 [Här](fardiga/stada/stada.html)
@@ -140,14 +124,6 @@ En av mina tidigare alster. Det är sällan jag skriver tragedier - detta är en
 Baserat på en verklig händelse.
 En novell kring att vilja så väl och sociala regler. Kan inte berätta mer utan att avslöja slutet.  
 [Här](fardiga/syster_yster_och_chokladbollarna/system_yster_och_chokladbollarna.html)
-
-### Thailand
-Jag var på rekognoseringstur för segling i Thailand och skrev dagbok. Detta skall vara den men...  
-[...den är förlorad](https://web.archive.org/web/20021101000000*/http://hem.passagen.se/olafj/noveller/Thailand.html)
-
-### Trettio spänn i en hiss
-En historia om någon som tjänar lite pengar fort i en hiss. Snabbläst, inte så bra och framför allt...
-[...borta](http://hem.passagen.se/olafj/noveller/trettio_spann_i_en_hiss.html)
 
 ### Tågresan
 Som [Fyra ungdomar på ett tåg](fardiga/ungdomar_pa_tag/ungdomar_pa_tag.html) men bättre. Här är den tvisten som saknades.  
@@ -159,10 +135,6 @@ För att kunna skriva atonal musik måste man förstå tonal musik.
 För att kunna bryta mot grammatiken måste man kunna den.  
 För att kunna bryta de sociala reglerna måste man kunna dem.  
 [Här](fardiga/urban_social_kompetens/urban_social_kompetens.html)
-
-### Vendettafolk
-En hardcore-variant med Rufus, samme figur som i [Broken leg](fardiga/broken_leg/broken_leg.html)  
-Den har tyvärr gått [förlorad för tidens tand](https://web.archive.org/web/20050912000000*/http://hem.passagen.se:80/olafj/noveller/vendettafolk.html) Någon med mer XP än jag kan kanske få fram den?
 
 ### Öl
 Based on a true story. Faktiskt min pappa som lärde mig den.  
@@ -267,6 +239,37 @@ Misstänker en dagdröm som är grunden till denna. I mitt hövve heter den Zomb
 ### Återvändarna
 En samling idéer kring att vara strandsatt i rymden, mänsklighetens utrotande, och jag vet inte vad.  
 [Här](ideer/atervandarna/atervandarna.html)
+
+## Borta
+Färdiga historier som har försvunnit med tiden.
+
+### Reboot
+En historia om när jag ominstallerade en dator hemma. MIna anteckningar säger att den kan vara rolig om man gillar datorer.  
+[Förlorad för tidens tand](https://web.archive.org/web/20051015000000*/http://hem.passagen.se/olafj/noveller/reeboot.htm) Någon med mer XP än jag kan kanske få fram den?
+
+### Rulla kulan i evighet
+En mycket kort historia, inspirerad av en tjej som inte var jättesmart.  
+[Förlorad för tidens tand](https://web.archive.org/web/20051015000000*/http://hem.passagen.se/olafj/noveller/rulla_kulan_i_evighet.html)
+
+### Semantik
+5 rader text.  
+[Förlorad för tidens tand](https://web.archive.org/web/20050912000000*/http://hem.passagen.se/olafj/noveller/semantik.html) Kan någon med mer skillz än jag få fram den?
+
+### Stereon
+On någon som försöker förklara "mitt" och "ditt" för en främling. Ryktet säger att historien är helt ok.  
+[Men tidens tand har ödelagt den](https://web.archive.org/web/20050201000000*/http://hem.passagen.se/olafj/noveller/stereon.html) Kan någon med mer kunskap än jag leta fram den?
+
+### Thailand
+Jag var på rekognoseringstur för segling i Thailand och skrev dagbok. Detta skall vara den men...  
+[...den är förlorad](https://web.archive.org/web/20021101000000*/http://hem.passagen.se/olafj/noveller/Thailand.html)
+
+### Trettio spänn i en hiss
+En historia om någon som tjänar lite pengar fort i en hiss. Snabbläst, inte så bra och framför allt...
+[...borta](http://hem.passagen.se/olafj/noveller/trettio_spann_i_en_hiss.html)
+
+### Vendettafolk
+En hardcore-variant med Rufus, samme figur som i [Broken leg](fardiga/broken_leg/broken_leg.html)  
+Den har tyvärr gått [förlorad för tidens tand](https://web.archive.org/web/20050912000000*/http://hem.passagen.se:80/olafj/noveller/vendettafolk.html) Någon med mer XP än jag kan kanske få fram den?
 
 # License
 [CC BY-NC](https://creativecommons.org/licenses/by-nc/4.0/)
