@@ -2,6 +2,11 @@
 Blandade essäer, anteckningar, plotar, noveller, flash fiction.  
 [Hemsida](https://losmanos.github.io/Writing/) | [Källkod](https://github.com/losmanos/writing)
 
+Det finns 3 delar här.  
+* Färdiga - de är läsbara. Varierande kvalitet.  
+* Idéer - anteckningar och skisser. Ingen idé att läsa.  
+* Borta - historier som har förstörts av tidens tand. Någon får gärna leta upp dem.
+
 ## Färdiga (och nästan färdiga)
 
 ### Arbetslös
@@ -141,6 +146,9 @@ Based on a true story. Faktiskt min pappa som lärde mig den.
 [Här](fardiga/ol/ol.html)
 
 ## Idéer
+Historier och idéer som inte är klara.  
+Det är anteckningar eller bara lösa ord.  
+Inget intressant om man inte nertecknar min livshistoria. Vilket man inte gör.
 
 ### Abort med kloning
 Om man dödar någon som är klonad, är det ett mord. Lägg till komplexiteten kring aborter. Åsiktskonflikt någon?  
