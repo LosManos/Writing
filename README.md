@@ -116,6 +116,10 @@ Men det inspirerade mig att skriva.
 En tråkigt men helt korrekt återberättad historia från en segeltur jag och min kusin hade. Alltså; flera händelser var roliga men berättelsen är tråkigt berättad. Som en dagbog rätt upp och ner änna.  
 [Här](fardiga/puffin_ankare_marulk/puffin_ankare_marulk.html    )
 
+### Reboot
+En historia om när jag ominstallerade en dator hemma. MIna anteckningar säger att den kan vara rolig om man gillar datorer.  
+[Förlorad för tidens tand](https://web.archive.org/web/20051015000000*/http://hem.passagen.se/olafj/noveller/reeboot.htm) Någon med mer XP än jag kan kanske få fram den?
+
 ### Syster Yster och chokladbollarna
 Baserat på en verklig händelse.
 En novell kring att vilja så väl och sociala regler. Kan inte berätta mer utan att avslöja slutet.  
