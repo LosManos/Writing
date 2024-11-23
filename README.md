@@ -120,6 +120,10 @@ En tråkigt men helt korrekt återberättad historia från en segeltur jag och m
 En historia om när jag ominstallerade en dator hemma. MIna anteckningar säger att den kan vara rolig om man gillar datorer.  
 [Förlorad för tidens tand](https://web.archive.org/web/20051015000000*/http://hem.passagen.se/olafj/noveller/reeboot.htm) Någon med mer XP än jag kan kanske få fram den?
 
+### Rulla kulan i evighet
+En mycket kort historia, inspirerad av en tjej som inte var jättesmart.  
+[Förlorad för tidens tand](https://web.archive.org/web/20051015000000*/http://hem.passagen.se/olafj/noveller/rulla_kulan_i_evighet.html)
+
 ### Syster Yster och chokladbollarna
 Baserat på en verklig händelse.
 En novell kring att vilja så väl och sociala regler. Kan inte berätta mer utan att avslöja slutet.  
