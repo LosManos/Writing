@@ -112,6 +112,10 @@ Hur skulle jag kunna veta det?
 Men det inspirerade mig att skriva.  
 [Här](fardiga/kandis/kandis.html)
 
+### Puffin, ett ankare och en marulk.
+En tråkigt men helt korrekt återberättad historia från en segeltur jag och min kusin hade. Alltså; flera händelser var roliga men berättelsen är tråkigt berättad. Som en dagbog rätt upp och ner änna.  
+[Här](fardiga/puffin_ankare_marulk/puffin_ankare_marulk.html    )
+
 ### Syster Yster och chokladbollarna
 Baserat på en verklig händelse.
 En novell kring att vilja så väl och sociala regler. Kan inte berätta mer utan att avslöja slutet.  
