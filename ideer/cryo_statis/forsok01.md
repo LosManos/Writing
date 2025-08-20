@@ -82,3 +82,25 @@ Hon fäller ner visiret och jag registrerar datumet för min avfärd i vinjetten
 
 ---
 
+Vaknar. Filmen framför mig står still. "00:20" står det i botten. Tror det betyder att den gått i 20 sekunder. Blinkar igång filmen. Fortfarande vinjett; tydligen stannar filmen om jag somnar. Finns den en klocka? nej. Så jag koncentrerar mig på de sammanfattade nyheterna. Lyckas hålla mig vaken.  
+När den är klar känner jag att någon lyfter av visiret. Syster Z. Ett nytt ansikte. En man denna gången. Tänker fråga vad han heter. Men blundar istället. Trött.  
+
+Vaknar igen. En del har hänt på nyheterna.  
+Rör på mig. Det går bra. D.v.s. jag ligger i ett rör, alternativt smal säng med höga kanter. Jag kan dra upp benen i vinkel. Jag kan luta mig åt höger och vänster. Ligga på sidan är för svårt. Jag lyfter armarna och huvudet. Ooh. Det snurrar. Andas. Lyft igen. Bättre. Vickar fort på fötterna. Vibrerar med fingrarna. Försöker trumma med dem. Nej.  
+Suckar. Skönt med luft i lungorna. Lyfter armarna, Viftar lite. Lite jobbigt. Lite ont.  
+När kan jag gå upp? Jag vill upp. Trycker på knappen.
+
+En syster kommer in. Samma man som tidigare. Lyfter på huvudet för att säga något. Snurrar. Tillbaka med huvudet.  
+"Snurrar det?"  
+Jag blundar och nickar.  
+"Det är ok. Har du ont någonstans?"  
+Jag öppnar ögonen. "Nix."  
+"Bra." Medan har pratar med mig ser han över skärmarna. "Det ser bra ut."  
+"När kan jag gå upp?"  
+"Skoj du frågade. Det är nämligen dags." "Om du vill."  
+"Jag vill." Reser på ryggen. Blundar mot snurrandet. Litar på att händerna som håller mot sidorna på rörsängen håller mig stadig. Andas andfått.  
+"Lugn Herkules!" Ett ögonblick trodde jag han menade att jag hette det. Så förstod jag det var ett uttryck. "Du kan inte stå ännu. Sitt still som du gör. Andas lugnt. De första rörelserna kommer vara tröga och obalanserade. Du kommer få ont här och var. Din mage kommer vara i alla hörn. Du kommer få ont i huvudet."  
+Jag var lugn igen. Förbereder mig på att resa mig.  
+"Vänta. Du behöver ett stöd." Syster gick att hämta något.  
+Jag passade på att se mig omkring.  
+
