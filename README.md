@@ -3,10 +3,10 @@ Blandade essäer, anteckningar, plotar, noveller, flash fiction.
 [Hemsida](https://losmanos.github.io/Writing/) | [Källkod](https://github.com/losmanos/writing)
 
 Det finns 3 delar här.  
-* Färdiga - de är läsbara. Varierande kvalitet.  
-* Idéer - anteckningar och skisser. Ingen idé att läsa.  
-* Borta - historier som har förstörts av tidens tand. Någon får gärna leta upp dem.
-* Spel - interaktiva texter och spel.
+* [Färdiga](#färdiga-och-nästan-färdiga) - de är läsbara. Varierande kvalitet.  
+* [Idéer](#idéer) - anteckningar och skisser. Ingen idé att läsa.  
+* [Borta](#borta) - historier som har förstörts av tidens tand. Någon får gärna leta upp dem.
+* [Spel](#spel) - interaktiva texter och spel.
 
 ## Färdiga (och nästan färdiga)
 
