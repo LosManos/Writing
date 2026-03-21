@@ -145,6 +145,14 @@ För att kunna bryta de sociala reglerna måste man kunna dem.
 Based on a true story. Faktiskt min pappa som lärde mig den.  
 [Här](fardiga/ol/ol.html)
 
+## Spel
+Här finns små spel och interaktiva experiment.
+
+### 3D Tabletop Duel
+Ett 3D-spel för 2 eller 4 spelare på samma skärm. Byggt med Three.js.  
+[Här](spel/3dTableTopDuel.html)
+
+
 ## Idéer
 Historier och idéer som inte är klara.  
 Det är anteckningar eller bara lösa ord.  
