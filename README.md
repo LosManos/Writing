@@ -283,17 +283,25 @@ Den har tyvärr gått [förlorad för tidens tand](https://web.archive.org/web/2
 ## Spel
 Här finns små spel och interaktiva experiment.
 
-### 3D tabletop duel
-Ett 3D-spel för 2 eller 4 spelare på samma skärm. Byggt med Three.js.  
-[Här](spel/3d_table_top_duel.html)
+### Point'n'click adventurespel
 
-### Powder day panic
-Ett litet interaktivt spel där du måste ta dig ner för berget.  
+#### The hunter's heart
+Mycket enkelt point'n'click aventure-spel. Kort och helt meningslöst, men exempel på hur lätt man kan bygga spel.  
+Du börjar som dinosauriejägare men lär dig vad som är viktigt i livet.  
+[Här](spel/hunters_heart/hunters_heart.html)
+
+#### Powder day panic
+Ett litet interaktivt spel där du måste ta dig ner för berget. Tips: Åk några gånger innan du ger upp.  
 [Här](spel/powder_day_panic.html)
 
-### Prejudice & Pestilence
-Samma som Powder day panic, men med 1700-tals miljö och zombier.
+#### Prejudice & Pestilence
+Samma som Powder day panic, men med 1700-tals miljö och zombier.  
 [Här](spel/pride_and_pestilence.html)
+
+### 3D tabletop duel
+Ett 3D-spel för 2 eller 4 spelare på samma skärm. Multiplayer fungerar bara på touch-skärm - om du inte har flera möss till din dator, som alla har separata pekare. (ja, jag har haft det; för att jag kunnat)  
+Byggt med Three.js. Faktiskt riktigt lyckat!   
+[Här](spel/3d_table_top_duel.html)
 
 # License
 [CC BY-NC](https://creativecommons.org/licenses/by-nc/4.0/)

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hunter's Heart</title>
+    <style>
+        :root {
+            --bg-color: #1a1a1a;
+            --term-amber: #ffb000;
+            --dim-amber: #6e4c00;
+            --text-font: 'Verdana', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--term-amber);
+            font-family: var(--text-font);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+
+        #game-container {
+            width: 100%;
+            max-width: 800px;
+            border: 2px solid var(--term-amber);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            height: 90vh;
+            background-color: #000;
+            box-shadow: 0 0 20px var(--dim-amber);
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            border-bottom: 1px dashed var(--term-amber);
+            padding-bottom: 15px;
+            margin-top: 0;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+        }
+
+        /* The scrolling log of text */
+        #log {
+            flex-grow: 1;
+            overflow-y: auto;
+            margin-bottom: 20px;
+            padding-right: 10px;
+            line-height: 1.6;
+            font-size: 1rem;
+            border-bottom: 1px solid #333;
+        }
+
+        .message-bot {
+            margin-bottom: 15px;
+        }
+
+        .message-user {
+            color: #fff;
+            font-style: italic;
+            margin-bottom: 10px;
+            opacity: 0.8;
+        }
+
+        .emphasis {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .item-highlight {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        /* Controls Area */
+        #controls {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /* Split Navigation and Actions */
+            gap: 20px;
+            padding-top: 10px;
+        }
+
+        h3 {
+            margin: 0 0 10px 0;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            color: var(--dim-amber);
+        }
+
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        button {
+            background-color: #222;
+            color: var(--term-amber);
+            border: 1px solid var(--term-amber);
+            padding: 12px;
+            font-family: var(--text-font);
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-align: left;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: var(--term-amber);
+            color: #000;
+            font-weight: bold;
+        }
+
+        button:disabled {
+            border-color: var(--dim-amber);
+            color: var(--dim-amber);
+            cursor: not-allowed;
+            background: #111;
+        }
+
+        /* Action Panel specific */
+        .context-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .context-buttons button {
+            text-align: center;
+            flex: 1 1 auto;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            #controls {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="game-container">
+        <h1>The Hunter's Heart</h1>
+
+        <div id="log">
+        </div>
+
+        <div id="controls">
+            <div class="panel">
+                <h3>Where to go:</h3>
+                <div id="nav-buttons" class="button-group">
+                </div>
+            </div>
+
+            <div class="panel">
+                <h3>Interact:</h3>
+                <div id="room-actions" class="context-buttons">
+                </div>
+
+                <h3 style="margin-top:15px;">Inventory:</h3>
+                <div id="inventory-display" class="context-buttons">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- GAME STATE ---
+        const state = {
+            currentRoom: 'base_camp',
+            inventory: ['Old Rifle'],
+            flags: {
+                gateOpen: false,
+                triceratopsHealed: false,
+                trexFed: false,
+                trexToothFixed: false,
+                hunterReformed: false // Becomes true when Rifle is discarded
+            }
+        };
+
+        // --- MAP DATA ---
+        const rooms = {
+            'base_camp': {
+                name: "Base Camp",
+                desc: "Your tent flaps in the wind. You are here to hunt the ultimate trophy, or so you thought. Your 'Old Rifle' feels heavy in your hands.",
+                exits: ['jungle_path'],
+                items: []
+            },
+            'jungle_path': {
+                name: "Jungle Path",
+                desc: "The canopy blocks out the sun. Huge ferns brush against your legs. You hear a low moan coming from the Clearing.",
+                exits: ['base_camp', 'gate', 'clearing', 'wreckage'],
+                items: ['Strange Berry']
+            },
+            'wreckage': {
+                name: "Overturned Jeep",
+                desc: "An old park vehicle covered in vines. It looks like it crashed years ago. The glove box is open.",
+                exits: ['jungle_path'],
+                items: ['Keycard']
+            },
+            'clearing': {
+                name: "Quiet Clearing",
+                desc: "", // Will be handled by customDesc
+                exits: ['jungle_path'],
+                items: [],
+                // This function replaces the standard description
+                customDesc: () => {
+                    if (state.flags.triceratopsHealed) {
+                        return "The sun shines on a peaceful scene. The Triceratops is standing up now, happily munching on ferns. It looks healthy and strong.";
+                    } else {
+                        return "A young Triceratops is lying in the mud. It looks sick, breathing heavily. It has a large, infected scratch on its flank.";
+                    }
+                },
+                onEnter: () => {
+                    if (state.flags.triceratopsHealed) {
+                        return "The dinosaur rumbles happily as you approach. You did a good thing.";
+                    }
+                    return "The Triceratops lets out a whimper. It needs medical attention, not a bullet.";
+                }
+            },
+            'gate': {
+                name: "Park Gate",
+                desc: "",
+                exits: ['jungle_path', 'facility_yard'],
+                items: [],
+                customDesc: () => state.flags.gateOpen ? "The gate stands open, inviting you into the facility." : "A massive electric fence gate. It is currently LOCKED. There is a card reader here."
+            },
+            'facility_yard': {
+                name: "Facility Courtyard",
+                desc: "Overgrown concrete. Weeds crack through the pavement.",
+                exits: ['gate', 'lobby', 'shed'],
+                items: []
+            },
+            'shed': {
+                name: "Maintenance Shed",
+                desc: "Dusty tools everywhere. Nothing useful remains, just cobwebs.",
+                exits: ['facility_yard'],
+                items: []
+            },
+            'lobby': {
+                name: "Visitor Center",
+                desc: "A rotunda with a banner reading 'When Dinosaurs Ruled the Earth' lying on the floor.",
+                exits: ['facility_yard', 'lab', 'kitchen'],
+                items: []
+            },
+            'kitchen': {
+                name: "Industrial Kitchen",
+                desc: "Stainless steel surfaces. The smell of old grease. You see a huge 'Frozen Steak' in a backup freezer.",
+                exits: ['lobby'],
+                items: ['Frozen Steak']
+            },
+            'lab': {
+                name: "Genetics Lab",
+                desc: "Broken vials and papers. On a desk, you see a 'Vet Medkit'. It contains bandages, antibiotics, and giant pliers.",
+                exits: ['lobby', 't_rex_paddock'],
+                items: ['Vet Medkit'],
+                onEnter: () => {
+                    if (!state.flags.hunterReformed) {
+                        return "You see the Medkit. You realize you can't carry both the Rifle and the heavy Medkit. You have to choose who you want to be.";
+                    }
+                    return "";
+                }
+            },
+            't_rex_paddock': {
+                name: "T-Rex Paddock",
+                desc: "You are on a viewing platform. The Mighty T-Rex stands there. It's not roaring in anger, but in pain. It's holding its jaw.",
+                exits: ['lab'],
+                items: []
+            },
+            'sunset_ridge': {
+                name: "Sunset Ridge",
+                desc: "The highest point in the park. You overlook the valley. You aren't a hunter anymore.",
+                exits: [],
+                items: []
+            }
+        };
+
+        // --- ENGINE FUNCTIONS ---
+
+        function log(text, type = 'bot') {
+            const logDiv = document.getElementById('log');
+            const entry = document.createElement('div');
+            entry.className = type === 'user' ? 'message-user' : 'message-bot';
+            entry.innerHTML = text;
+            logDiv.appendChild(entry);
+            // Smooth scroll to bottom
+            logDiv.scrollTo({ top: logDiv.scrollHeight, behavior: 'smooth' });
+        }
+
+        function render() {
+            const room = rooms[state.currentRoom];
+            let desc = room.desc;
+
+            // Append dynamic descriptions
+            if (room.customDesc) desc = room.customDesc();
+            if (room.onEnter) {
+                const extra = room.onEnter();
+                if (extra) desc += " <br><br><span class='emphasis'>" + extra + "</span>";
+            }
+
+            // List items in the room
+            if (room.items.length > 0) {
+                desc += "<br><br>You see: " + room.items.map(i => `<span class='item-highlight'>${i}</span>`).join(", ");
+            }
+
+            log(desc);
+            updateControls();
+        }
+
+        function updateControls() {
+            const room = rooms[state.currentRoom];
+
+            // 1. UPDATE NAVIGATION BUTTONS
+            const navContainer = document.getElementById('nav-buttons');
+            navContainer.innerHTML = '';
+
+            room.exits.forEach(targetId => {
+                const targetRoom = rooms[targetId];
+                const btn = document.createElement('button');
+                btn.innerHTML = `Go to <b>${targetRoom.name}</b>`;
+                btn.onclick = () => attemptMove(targetId);
+                navContainer.appendChild(btn);
+            });
+
+            // 2. UPDATE ACTION BUTTONS
+            const actionContainer = document.getElementById('room-actions');
+            actionContainer.innerHTML = '';
+
+            if (room.items.length === 0) {
+                actionContainer.innerHTML = '<span style="color:#555; font-size:0.8rem;">Nothing to take</span>';
+            } else {
+                room.items.forEach(item => {
+                    const btn = document.createElement('button');
+                    btn.innerText = `Take ${item}`;
+                    btn.onclick = () => takeItem(item);
+                    actionContainer.appendChild(btn);
+                });
+            }
+
+            // 3. UPDATE INVENTORY BUTTONS
+            const invContainer = document.getElementById('inventory-display');
+            invContainer.innerHTML = '';
+
+            if (state.inventory.length === 0) {
+                invContainer.innerHTML = '<span style="color:#555; font-size:0.8rem;">Empty</span>';
+            } else {
+                state.inventory.forEach(item => {
+                    const btn = document.createElement('button');
+                    btn.innerText = item;
+                    btn.onclick = () => useItem(item);
+                    invContainer.appendChild(btn);
+                });
+            }
+        }
+
+        function attemptMove(targetId) {
+            // LOGIC CHECK: Is the gate locked?
+            if (state.currentRoom === 'gate' && targetId === 'facility_yard' && !state.flags.gateOpen) {
+                log("The gate won't budge. It needs a Keycard.", 'bot');
+                return;
+            }
+
+            // LOGIC CHECK: Prevent going to T-Rex before healing Trike
+            if (state.currentRoom === 'lab' && targetId === 't_rex_paddock') {
+                if (!state.flags.triceratopsHealed) {
+                    log("You hear a terrifying roar. You realize you need to practice your medical skills on the Triceratops in the Jungle Clearing before facing the King.", 'bot');
+                    return;
+                }
+            }
+
+            // Success - Move
+            state.currentRoom = targetId;
+            log(`> Moving to ${rooms[targetId].name}...`, 'user');
+
+            // Special Ending Trigger
+            if (state.currentRoom === 't_rex_paddock' && state.flags.trexToothFixed && state.flags.trexFed) {
+                setTimeout(() => {
+                    state.currentRoom = 'sunset_ridge';
+                    render();
+                    log("<br><h1>CONGRATULATIONS!</h1>You healed the King of Dinosaurs. You toss your rifle into the mud. You are the Vet now.", 'bot');
+                    // Disable controls at end game
+                    document.getElementById('controls').style.display = 'none';
+                }, 3000);
+            } else {
+                setTimeout(render, 300);
+            }
+        }
+
+        function takeItem(item) {
+            const room = rooms[state.currentRoom];
+
+            // The Narrative Choice: Swapping Rifle for Medkit
+            if (item === 'Vet Medkit' && state.inventory.includes('Old Rifle')) {
+                if (!confirm("The Medkit is too heavy to carry with the Rifle. Are you ready to stop hunting and start healing? (Click OK to drop Rifle)")) {
+                    return;
+                }
+                state.inventory = state.inventory.filter(i => i !== 'Old Rifle');
+                state.flags.hunterReformed = true;
+                log("> You drop the rifle. It sinks into the mud. You pick up the Medkit.", 'user');
+            } else {
+                log(`> Took ${item}`, 'user');
+            }
+
+            state.inventory.push(item);
+            room.items = room.items.filter(i => i !== item);
+            updateControls();
+        }
+
+        function useItem(item) {
+            log(`> Using ${item}...`, 'user');
+
+            // 1. RIFLE LOGIC
+            if (item === 'Old Rifle') {
+                const dinoRooms = ['clearing', 't_rex_paddock'];
+
+                // If we are in a room with a dinosaur
+                if (dinoRooms.includes(state.currentRoom)) {
+                    const refusals = [
+                        "You aim the rifle... but you hesitate. It's too majestic.",
+                        "The safety is stuck. Maybe it's a sign.",
+                        "You look into its eyes. You can't pull the trigger.",
+                        "You aren't a killer. Not anymore."
+                    ];
+                    const randomRefusal = refusals[Math.floor(Math.random() * refusals.length)];
+                    log(randomRefusal, 'bot');
+                } else {
+                    // If we are elsewhere
+                    log("You look around. There is nothing here to hunt. Save your ammo.", 'bot');
+                }
+                return;
+            }
+
+            // 2. KEYCARD LOGIC
+            if (item === 'Keycard' && state.currentRoom === 'gate') {
+                log("You swipe the card. The ancient hydraulics groan. The gate opens!", 'bot');
+                state.flags.gateOpen = true;
+                state.inventory = state.inventory.filter(i => i !== 'Keycard'); // Remove key
+                updateControls(); // Refresh to show unlocked gate
+                // Force a re-render of text to show the gate is open
+                setTimeout(render, 500);
+                return;
+            }
+
+            // 3. MEDKIT LOGIC (Triceratops)
+            if (item === 'Vet Medkit' && state.currentRoom === 'clearing') {
+                if (state.flags.triceratopsHealed) {
+                    log("You've already healed this dinosaur.", 'bot');
+                } else {
+                    log("You clean the Triceratops' wound and apply antibiotics. The dinosaur sighs in relief.", 'bot');
+                    state.flags.triceratopsHealed = true;
+                    render();
+                }
+                return;
+            }
+
+            // 4. T-REX PUZZLE LOGIC
+            if (state.currentRoom === 't_rex_paddock') {
+                if (item === 'Frozen Steak') {
+                    log("You toss the steak. The T-Rex catches it! It's distracted, but still in pain.", 'bot');
+                    state.flags.trexFed = true;
+                    state.inventory = state.inventory.filter(i => i !== 'Frozen Steak');
+                } else if (item === 'Vet Medkit') {
+                    if (state.flags.trexFed) {
+                        log("While the Rex eats, you bravely climb up and use the giant pliers to pull the bone splinter from its gum. It ROARS... in relief!", 'bot');
+                        state.flags.trexToothFixed = true;
+                        // Trigger ending loop
+                        attemptMove(state.currentRoom);
+                    } else {
+                        log("You can't get close enough to its mouth! It's too hungry!", 'bot');
+                    }
+                } else {
+                    log("That won't work here.", 'bot');
+                }
+                updateControls();
+                return;
+            }
+
+            log("Nothing happened.", 'bot');
+        }
+
+        // --- INITIALIZATION ---
+        window.onload = () => {
+            log("Welcome to THE HUNTER'S HEART.<br>Find the dinosaurs. Decide your fate.<br>---------------------------------");
+            render();
+        };
+
+    </script>
+</body>
+
+</html>
