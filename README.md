@@ -6,6 +6,7 @@ Det finns 3 delar här.
 * Färdiga - de är läsbara. Varierande kvalitet.  
 * Idéer - anteckningar och skisser. Ingen idé att läsa.  
 * Borta - historier som har förstörts av tidens tand. Någon får gärna leta upp dem.
+* Spel - interaktiva texter och spel.
 
 ## Färdiga (och nästan färdiga)
 
@@ -278,6 +279,13 @@ En historia om någon som tjänar lite pengar fort i en hiss. Snabbläst, inte s
 ### Vendettafolk
 En hardcore-variant med Rufus, samme figur som i [Broken leg](fardiga/broken_leg/broken_leg.html)  
 Den har tyvärr gått [förlorad för tidens tand](https://web.archive.org/web/20050912000000*/http://hem.passagen.se:80/olafj/noveller/vendettafolk.html) Någon med mer XP än jag kan kanske få fram den?
+
+## Spel
+Här finns små spel och interaktiva experiment.
+
+### 3D Tabletop Duel
+Ett 3D-spel för 2 eller 4 spelare på samma skärm. Byggt med Three.js.  
+[Här](spel/3dTableTopDuel.html)
 
 # License
 [CC BY-NC](https://creativecommons.org/licenses/by-nc/4.0/)

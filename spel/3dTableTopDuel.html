@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>3D Tabletop Duel - Final Universal</title>
+    <style>
+        body { margin: 0; overflow: hidden; background: #000; font-family: sans-serif; touch-action: none; }
+
+        #gear {
+            position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+            z-index: 9999; width: 70px; height: 70px;
+            background: #222; border: 3px solid #fff; border-radius: 50%;
+            display: flex; justify-content: center; align-items: center;
+            color: #fff; cursor: pointer; box-shadow: 0 0 15px rgba(255,255,255,0.3);
+            transition: transform 0.2s linear;
+        }
+
+        #gear.danger { border-color: #ff0000; color: #ff0000; box-shadow: 0 0 20px #ff0000; animation: shake 0.1s infinite; }
+        @keyframes shake { 0% { margin-left: -2px; } 50% { margin-left: 2px; } 100% { margin-left: 0; } }
+
+        .overlay {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.9); z-index: 10000; display: none;
+            flex-direction: column; justify-content: center; align-items: center; color: white;
+        }
+
+        .card { background: #111; padding: 25px; border-radius: 15px; border: 1px solid #444; text-align: center; min-width: 280px; }
+        .ui-container { position: absolute; pointer-events: none; color: white; z-index: 100; display: flex; justify-content: center; align-items: center; }
+        .target { background: rgba(20,20,20,0.9); padding: 10px; border-radius: 10px; border: 2px solid #fff; text-align: center; }
+        .icon { font-size: 40px; display: block; }
+        .score-val { font-size: 14px; font-weight: bold; color: #0f0; }
+
+        button { padding: 12px; margin: 5px; border-radius: 5px; border: 1px solid #555; background: #333; color: #fff; font-weight: bold; width: 44%; cursor: pointer; }
+        button.active { background: #fff; color: #000; border-color: #fff; }
+        .action-btn { background: #0f0; color: #000; width: 100%; margin-top: 15px; font-size: 18px; border: none; }
+
+        #line-h { position: absolute; top: 50%; width: 100%; height: 2px; background: #333; z-index: 5; }
+        #line-v { position: absolute; left: 50%; height: 100%; width: 2px; background: #333; z-index: 5; display: none; }
+    </style>
+</head>
+<body>
+
+    <div id="gear"><div id="gear-content" style="pointer-events:none;">⚙️</div></div>
+
+    <div id="settings-overlay" class="overlay">
+        <div class="card">
+            <h2>GAME SETUP</h2>
+            <button id="btn-p2" class="active">2P</button>
+            <button id="btn-p4">4P</button>
+            <p>MODE</p>
+            <button id="btn-free" class="active">FREE</button>
+            <button id="btn-first10">TO 10</button>
+            <button id="btn-time">60 SEC</button>
+            <button id="resume-btn" class="action-btn">RESUME</button>
+        </div>
+    </div>
+
+    <div id="results-overlay" class="overlay">
+        <div class="card">
+            <h1 id="winner-text">GAME OVER</h1>
+            <div id="rankings-list" style="margin: 15px 0;"></div>
+            <button class="action-btn" id="reboot-btn">NEW GAME</button>
+        </div>
+    </div>
+
+    <div id="line-h"></div><div id="line-v"></div>
+
+    <div id="ui-p1" class="ui-container"></div>
+    <div id="ui-p2" class="ui-container"></div>
+    <div id="ui-p3" class="ui-container"></div>
+    <div id="ui-p4" class="ui-container"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <script>
+        const figures = ['🍎', '🚀', '💎', '👻', '⚽', '🎸'];
+        let config = { players: 2, mode: 'free' };
+        let players = {};
+        let gameActive = false;
+        let timerInt, timeLeft = 60, currentRot = 0;
+        const raycaster = new THREE.Raycaster();
+        const mouse = new THREE.Vector2();
+
+        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+        renderer.autoClear = false; // Required for manual split-screen clearing
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setPixelRatio(window.devicePixelRatio);
+        document.body.appendChild(renderer.domElement);
+
+        const gear = document.getElementById('gear');
+        const gearContent = document.getElementById('gear-content');
+        const settingsOverlay = document.getElementById('settings-overlay');
+        const resultsOverlay = document.getElementById('results-overlay');
+        const resumeBtn = document.getElementById('resume-btn');
+
+        // --- UI Interactions ---
+        gear.addEventListener('click', () => {
+            settingsOverlay.style.display = 'flex';
+            resumeBtn.innerText = "RESUME";
+            gameActive = false;
+            clearInterval(timerInt);
+        });
+
+        function updateConfig(key, val) {
+            config[key] = val;
+            resumeBtn.innerText = "START NEW";
+            document.querySelectorAll('#settings-overlay button:not(.action-btn)').forEach(b => b.classList.remove('active'));
+            document.getElementById(config.players === 2 ? 'btn-p2' : 'btn-p4').classList.add('active');
+            document.getElementById('btn-' + config.mode).classList.add('active');
+        }
+
+        document.getElementById('btn-p2').onclick = () => updateConfig('players', 2);
+        document.getElementById('btn-p4').onclick = () => updateConfig('players', 4);
+        document.getElementById('btn-free').onclick = () => updateConfig('mode', 'free');
+        document.getElementById('btn-first10').onclick = () => updateConfig('mode', 'first10');
+        document.getElementById('btn-time').onclick = () => updateConfig('mode', 'time');
+
+        resumeBtn.onclick = () => {
+            settingsOverlay.style.display = 'none';
+            if (resumeBtn.innerText === "START NEW") initGame();
+            else {
+                gameActive = true;
+                if(config.mode === 'time') startTimer(timeLeft);
+            }
+        };
+
+        document.getElementById('reboot-btn').onclick = () => {
+            resultsOverlay.style.display = 'none';
+            initGame();
+        };
+
+        // --- Core Logic ---
+        function createPlayerData(id, isTop) {
+            const scene = new THREE.Scene();
+            const camera = new THREE.PerspectiveCamera(50, 1, 0.1, 100);
+            camera.position.z = 5;
+            if (isTop) camera.rotation.z = Math.PI;
+
+            scene.add(new THREE.AmbientLight(0xffffff, 1.0));
+            const light = new THREE.DirectionalLight(0xffffff, 1.0);
+            light.position.set(2, 2, 5);
+            scene.add(light);
+
+            const mats = figures.map(f => {
+                const canvas = document.createElement('canvas');
+                canvas.width = 256; canvas.height = 256;
+                const ctx = canvas.getContext('2d');
+                ctx.fillStyle = '#fff'; ctx.fillRect(0,0,256,256);
+                ctx.font = '160px Arial'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+                ctx.fillText(f, 128, 128);
+                return new THREE.MeshStandardMaterial({ map: new THREE.CanvasTexture(canvas) });
+            });
+            const die = new THREE.Mesh(new THREE.BoxGeometry(2.2, 2.2, 2.2), mats);
+            scene.add(die);
+
+            document.getElementById(`ui-${id}`).innerHTML = `<div class="target"><span id="icon-${id}" class="icon">❓</span><span class="score-val">FOUND: <span id="score-${id}">0</span></span></div>`;
+            return { id, isTop, scene, camera, die, target: 0, score: 0, pointerId: null, lastX: 0, lastY: 0, startTime: 0 };
+        }
+
+        function initGame() {
+            gameActive = true;
+            document.getElementById('line-v').style.display = config.players === 4 ? 'block' : 'none';
+            gearContent.innerText = (config.mode === 'time') ? "60" : "⚙️";
+            gear.classList.remove('danger');
+
+            ['p1', 'p2', 'p3', 'p4'].forEach(id => document.getElementById(`ui-${id}`).innerHTML = '');
+
+            players = {};
+            const keys = config.players === 2 ? ['p1', 'p3'] : ['p1', 'p2', 'p3', 'p4'];
+            const w = window.innerWidth, h = window.innerHeight;
+
+            keys.forEach(k => {
+                players[k] = createPlayerData(k, k === 'p3' || k === 'p4');
+                const el = document.getElementById(`ui-${k}`);
+                if (config.players === 2) {
+                    el.style.cssText = k === 'p1' ? `bottom:0;left:0;width:${w}px;height:${h/2}px` : `top:0;left:0;width:${w}px;height:${h/2}px`;
+                } else {
+                    const pos = {p1:`bottom:0;left:0`, p2:`bottom:0;right:0`, p3:`top:0;left:0`, p4:`top:0;right:0`}[k];
+                    el.style.cssText = `${pos};width:${w/2}px;height:${h/2}px`;
+                }
+                setTarget(players[k]);
+            });
+            if(config.mode === 'time') startTimer(60);
+        }
+
+        function startTimer(sec) {
+            clearInterval(timerInt);
+            timeLeft = sec;
+            timerInt = setInterval(() => {
+                timeLeft--;
+                gearContent.innerText = timeLeft;
+                currentRot += 15;
+                gear.style.transform = `translate(-50%, -50%) rotate(${currentRot}deg)`;
+                if(timeLeft <= 5) gear.classList.add('danger');
+                if(timeLeft <= 0) endGame("TIME'S UP!");
+            }, 1000);
+        }
+
+        function setTarget(p) {
+            p.target = Math.floor(Math.random() * 6);
+            document.getElementById(`icon-${p.id}`).innerText = figures[p.target];
+        }
+
+        function endGame(reason) {
+            gameActive = false;
+            clearInterval(timerInt);
+            const sorted = Object.values(players).sort((a,b) => b.score - a.score);
+            resultsOverlay.style.display = 'flex';
+            document.getElementById('winner-text').innerText = reason;
+            document.getElementById('rankings-list').innerHTML = sorted.map((p, i) => `<div>${i+1}. Player ${p.id.toUpperCase()}: ${p.score}</div>`).join('');
+        }
+
+        // --- UNIVERSAL POINTER EVENTS (Fixes Mac Safari Clicks) ---
+        window.addEventListener('pointerdown', e => {
+            if(!gameActive || e.target.id === 'gear') return;
+            const isTop = e.clientY < window.innerHeight / 2;
+            const isLeft = e.clientX < window.innerWidth / 2;
+            let pKey = config.players === 2 ? (isTop ? 'p3' : 'p1') : (isTop ? (isLeft ? 'p3' : 'p4') : (isLeft ? 'p1' : 'p2'));
+            const p = players[pKey];
+            if(p) {
+                p.pointerId = e.pointerId;
+                p.lastX = e.clientX; p.lastY = e.clientY;
+                p.startTime = Date.now();
+            }
+        });
+
+        window.addEventListener('pointermove', e => {
+            if(!gameActive) return;
+            const p = Object.values(players).find(p => p.pointerId === e.pointerId);
+            if (p) {
+                const dx = (e.clientX - p.lastX) * 0.01;
+                const dy = (e.clientY - p.lastY) * 0.01;
+                const inv = p.isTop ? -1 : 1;
+                // Global Rotation Logic
+                const qX = new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0, 1, 0), dx * inv);
+                const qY = new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(1, 0, 0), dy * inv);
+                p.die.quaternion.premultiply(qX);
+                p.die.quaternion.premultiply(qY);
+                p.lastX = e.clientX; p.lastY = e.clientY;
+            }
+        });
+
+        window.addEventListener('pointerup', e => {
+            const p = Object.values(players).find(p => p.pointerId === e.pointerId);
+            if (p) {
+                if (Date.now() - p.startTime < 250) {
+                    const rect = document.getElementById(`ui-${p.id}`).getBoundingClientRect();
+                    mouse.x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
+                    mouse.y = -((e.clientY - rect.top) / rect.height) * 2 + 1;
+                    raycaster.setFromCamera(mouse, p.camera);
+                    const hit = raycaster.intersectObject(p.die);
+                    if(hit.length > 0 && Math.floor(hit[0].faceIndex/2) === p.target) {
+                        p.score++;
+                        document.getElementById(`score-${p.id}`).innerText = p.score;
+                        if(config.mode === 'first10' && p.score >= 10) endGame("VICTORY!");
+                        else setTarget(p);
+                    }
+                }
+                p.pointerId = null;
+            }
+        });
+
+        function animate() {
+            requestAnimationFrame(animate);
+            if(!gameActive) return;
+            renderer.clear();
+            renderer.setScissorTest(true);
+            Object.values(players).forEach(p => {
+                const rect = document.getElementById(`ui-${p.id}`).getBoundingClientRect();
+                const h = window.innerHeight;
+                renderer.setViewport(rect.left, h - rect.bottom, rect.width, rect.height);
+                renderer.setScissor(rect.left, h - rect.bottom, rect.width, rect.height);
+                p.camera.aspect = rect.width / rect.height; p.camera.updateProjectionMatrix();
+                renderer.render(p.scene, p.camera);
+            });
+        }
+        initGame(); animate();
+
+        window.addEventListener('resize', () => {
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            initGame(); // Re-adjust layouts on resize
+        });
+    </script>
+</body>
+</html>
