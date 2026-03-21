@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prejudice & Pestilence</title>
+    <style>
+        /* --- VICTORIAN/GOTHIC STYLING --- */
+        body {
+            background-color: #0f0f0f;
+            color: #dcd0c0;
+            /* Parchment color */
+            font-family: 'Georgia', 'Times New Roman', serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            overflow-x: hidden;
+            background-image: radial-gradient(circle, #1a1a1a 0%, #000000 100%);
+        }
+
+        #game-container {
+            width: 100%;
+            max-width: 700px;
+            background-color: #1c1c1c;
+            border: 4px double #8a6d3b;
+            /* Gold/Bronze border */
+            border-radius: 4px;
+            padding: 30px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+            position: relative;
+            z-index: 10;
+        }
+
+        h1 {
+            text-align: center;
+            color: #c5a059;
+            /* Dull Gold */
+            margin-top: 0;
+            border-bottom: 1px solid #5a4a2a;
+            padding-bottom: 15px;
+            font-style: italic;
+            letter-spacing: 2px;
+            font-size: 2em;
+        }
+
+        #status-bar {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9em;
+            color: #888;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #111;
+            border: 1px solid #333;
+            font-family: 'Courier New', monospace;
+        }
+
+        .stat-box {
+            margin-right: 15px;
+        }
+
+        #story-text {
+            min-height: 200px;
+            margin-bottom: 25px;
+            line-height: 1.8;
+            font-size: 1.15em;
+        }
+
+        /* Text Highlights */
+        .highlight {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .item-found {
+            color: #ffd700;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .danger {
+            color: #ff4d4d;
+            font-weight: bold;
+        }
+
+        .romance {
+            color: #ffb6c1;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        /* Actions */
+        #actions {
+            display: grid;
+            gap: 12px;
+        }
+
+        button {
+            background-color: #2a2a2a;
+            color: #dcd0c0;
+            border: 1px solid #5a4a2a;
+            padding: 15px;
+            font-family: inherit;
+            font-size: 1.05em;
+            cursor: pointer;
+            text-align: left;
+            transition: all 0.3s;
+            border-radius: 2px;
+        }
+
+        button:hover {
+            background-color: #3a3a3a;
+            border-color: #c5a059;
+            padding-left: 25px;
+            box-shadow: -5px 0 10px rgba(197, 160, 89, 0.1);
+        }
+
+        .notification {
+            display: block;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #221a1a;
+            border-left: 3px solid #c5a059;
+            color: #c5a059;
+            font-style: italic;
+        }
+
+        /* --- HEART ANIMATION --- */
+        #heart-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            overflow: hidden;
+        }
+
+        .heart {
+            position: absolute;
+            top: -10%;
+            color: #b30000;
+            /* Deep blood red for gothic romance */
+            font-size: 2em;
+            user-select: none;
+            animation-name: fallDown;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fallDown {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(110vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="game-container">
+        <h1>⚜ PREJUDICE & PESTILENCE ⚜</h1>
+
+        <div id="status-bar">
+            <div class="stat-box" id="location-display">Loc: Bedchamber</div>
+            <div class="stat-box" id="inventory-display">Inv: None</div>
+            <div class="stat-box" id="run-display">Patrols: 0</div>
+        </div>
+
+        <div id="story-text">
+        </div>
+
+        <div id="actions">
+        </div>
+    </div>
+
+    <div id="heart-overlay"></div>
+
+    <script>
+        // --- GAME STATE ---
+        const gameState = {
+            currentLocation: 'bedroom',
+            runCount: 0,
+            inventory: ['Silk Robe'],
+            flags: {
+                foundKey: false, doorUnlocked: false, curtainsOpen: false,
+                foundPass: false, foundWeapon: false, foundSnacks: false, ateSnacks: false,
+                hasCompanion: false
+            }
+        };
+
+        // --- HELPERS ---
+        function hasItem(item) { return gameState.inventory.includes(item); }
+        function removeItem(item) {
+            const index = gameState.inventory.indexOf(item);
+            if (index > -1) gameState.inventory.splice(index, 1);
+        }
+        function changeLocation(newLoc) { gameState.currentLocation = newLoc; }
+
+        // --- ANIMATION ---
+        function triggerHeartSnow() {
+            const overlay = document.getElementById('heart-overlay');
+            overlay.innerHTML = '';
+            const numHearts = 50;
+
+            for (let i = 0; i < numHearts; i++) {
+                const heart = document.createElement('div');
+                heart.classList.add('heart');
+                heart.innerHTML = '♥';
+
+                heart.style.left = Math.random() * 100 + 'vw';
+                heart.style.fontSize = (Math.random() * 30 + 20) + 'px';
+
+                const duration = Math.random() * 5 + 4;
+                heart.style.animationDuration = duration + 's';
+
+                const delay = Math.random() * 3;
+                heart.style.animationDelay = delay + 's';
+
+                overlay.appendChild(heart);
+            }
+            setTimeout(() => { overlay.innerHTML = ''; }, 10000);
+        }
+
+        // --- SCENES DATA ---
+        const scenes = {
+            'bedroom': {
+                description: () => {
+                    let text = "You awake in your <b>Bedchamber</b>. The air is damp. It is a truth universally acknowledged that a single person in possession of a brain must be in want of a musket.";
+                    if (gameState.flags.hasCompanion) {
+                        text += " <span class='romance'>Your suitor awaits by the vanity, looking dashing yet nervous.</span>";
+                    }
+                    if (!gameState.flags.curtainsOpen) text += " The heavy velvet drapes are drawn tight.";
+                    else text += " The drapes are open, revealing the grey, fog-choked estate.";
+                    return text;
+                },
+                actions: [
+                    {
+                        // --- THE ROMANCE ACTION ---
+                        text: "Propose a Union (End Game) ♥",
+                        condition: () => gameState.flags.hasCompanion,
+                        result: () => {
+                            triggerHeartSnow();
+                            return "<span class='romance'>Oh, joy!</span> They accept your hand! You shall fight the undead hordes side-by-side, forevermore. How ardently you admire them!";
+                        }
+                    },
+                    {
+                        text: "Part the Velvet Drapes",
+                        condition: () => !gameState.flags.curtainsOpen,
+                        result: () => {
+                            gameState.flags.curtainsOpen = true;
+                            return "You pull back the heavy fabric. A <span class='highlight'>Brass Key</span> sits upon the windowsill.";
+                        }
+                    },
+                    {
+                        text: "Take Key & Unlock Door",
+                        condition: () => gameState.flags.curtainsOpen && !gameState.flags.foundKey,
+                        result: () => {
+                            gameState.flags.foundKey = true;
+                            gameState.flags.doorUnlocked = true;
+                            return "You take the key and turn it in the iron lock. Clack.";
+                        }
+                    },
+                    {
+                        text: "Check under the Fainting Couch",
+                        condition: () => !gameState.flags.foundPass,
+                        result: () => {
+                            gameState.flags.foundPass = true;
+                            gameState.inventory.push("Ball Invitation");
+                            return "You find your <span class='item-found'>Invitation</span>. One cannot patrol the grounds without proper papers.";
+                        }
+                    },
+                    {
+                        text: "Enter the Grand Gallery",
+                        condition: () => gameState.flags.doorUnlocked,
+                        result: () => { changeLocation('hallway'); return "You step onto the cold marble floor."; }
+                    },
+                    {
+                        text: "Try the Door",
+                        condition: () => !gameState.flags.doorUnlocked,
+                        result: () => "Locked. You cannot face the apocalypse trapped in here."
+                    }
+                ]
+            },
+            'hallway': {
+                description: () => "You stand in the <b>Grand Gallery</b>. Portraits of ancestors stare down judgmentally.<br><b>West:</b> The Scullery.<br><b>South:</b> The Carriage Circle (Exit).",
+                actions: [
+                    {
+                        text: "Retire to Bedchamber",
+                        condition: () => true,
+                        result: () => { changeLocation('bedroom'); return "You retreat to your chambers."; }
+                    },
+                    {
+                        text: "Visit the Scullery",
+                        condition: () => true,
+                        result: () => { changeLocation('kitchen'); return "You head to the servants' quarters."; }
+                    },
+                    {
+                        text: "Check the Armory Cabinet",
+                        condition: () => !gameState.flags.foundWeapon,
+                        result: () => {
+                            gameState.flags.foundWeapon = true;
+                            gameState.inventory.push("Musket");
+                            return "Ah, your trusty <span class='item-found'>Musket</span>. Primed and ready.";
+                        }
+                    },
+                    {
+                        text: "Go to Carriage Circle",
+                        condition: () => true,
+                        result: () => { changeLocation('summit_hub'); return "You step out into the mist."; }
+                    }
+                ]
+            },
+            'kitchen': {
+                description: () => "You are in the <b>Scullery</b>. It smells of lye soap and old tea." + (gameState.flags.hasCompanion ? " Your suitor politely inspects the silverware." : ""),
+                actions: [
+                    {
+                        text: "Take Tea Biscuits",
+                        condition: () => !gameState.flags.foundSnacks && !hasItem("Biscuits"),
+                        result: () => {
+                            gameState.flags.foundSnacks = true;
+                            gameState.inventory.push("Biscuits");
+                            gameState.flags.ateSnacks = false;
+                            return "You pocket some <span class='item-found'>Tea Biscuits</span>. Delightful, but the scent is strong.";
+                        }
+                    },
+                    {
+                        text: "Eat Biscuits",
+                        condition: () => hasItem("Biscuits"),
+                        result: () => { removeItem("Biscuits"); gameState.flags.ateSnacks = true; return "You nibble the biscuits delicately. The crumbs fall to the floor."; }
+                    },
+                    {
+                        text: "Return to Gallery",
+                        condition: () => true,
+                        result: () => { changeLocation('hallway'); return "Back to the upper house."; }
+                    }
+                ]
+            },
+            'summit_hub': {
+                description: () => {
+                    let txt = "You are at the <b>Carriage Circle</b>. The fog is thick.<br><br><b>North:</b> The Manor<br><b>East:</b> The Tea Pavilion<br><b>South:</b> The Haunted Moor";
+                    if (gameState.flags.hasCompanion) txt += "<br><br>Your suitor is checking their pistol.";
+                    return txt;
+                },
+                actions: [
+                    { text: "Enter The Manor", condition: () => true, result: () => { changeLocation('hallway'); return "You enter the safety of the house."; } },
+                    { text: "Visit Tea Pavilion", condition: () => true, result: () => { changeLocation('cafe'); return "You walk to the gazebo."; } },
+                    {
+                        text: "Patrol the Moor", condition: () => true,
+                        result: () => {
+                            if (hasItem("Musket") && hasItem("Ball Invitation")) { changeLocation('slopes'); return "For King and Country!"; }
+                            return "You cannot leave! You lack your <b>Musket</b> or your <b>Invitation</b>.";
+                        }
+                    }
+                ]
+            },
+            'cafe': {
+                description: () => "You are in the <b>Tea Pavilion</b>. A silver service trolley sits unattended." + (gameState.flags.hasCompanion ? " Your suitor looks peckish." : ""),
+                actions: [
+                    {
+                        text: "Take Biscuits from Trolley",
+                        condition: () => hasItem("Ball Invitation") && !hasItem("Biscuits"),
+                        result: () => {
+                            gameState.inventory.push("Biscuits"); gameState.flags.ateSnacks = false;
+                            return "You find fresh <span class='item-found'>Biscuits</span> on the tray.";
+                        }
+                    },
+                    {
+                        text: "Take Biscuits (Need Invitation)",
+                        condition: () => !hasItem("Ball Invitation"),
+                        result: () => { return "Propriety dictates you cannot take tea without an invitation! Check under the fainting couch."; }
+                    },
+                    { text: "Return to Circle", condition: () => true, result: () => { changeLocation('summit_hub'); return "You leave the pavilion."; } }
+                ]
+            },
+            'slopes': {
+                description: () => {
+                    if (hasItem("Biscuits") && !gameState.flags.ateSnacks) {
+                        let msg = "<span class='danger'>ALARM!</span> A rotting <span class='danger'>UNDEAD GENTLEMAN</span> lurches from the fog! He smells your biscuits!";
+                        if (gameState.flags.hasCompanion) msg += " Your suitor gasps in horror!";
+                        return msg;
+                    }
+                    return gameState.flags.hasCompanion ? "You and your suitor dispatch zombies with elegance and grace." : "You patrol the moor, musket in hand. The silence is heavy.";
+                },
+                actions: [
+                    {
+                        text: "Gaze upon the Horror",
+                        condition: () => hasItem("Biscuits") && !gameState.flags.ateSnacks,
+                        result: () => {
+                            changeLocation('bedroom');
+                            let msg = "<span class='danger'>SCANDAL!</span> You swoon in terror and flee back to your chambers!";
+                            if (gameState.flags.hasCompanion) { msg += " You abandoned your suitor to the horde! You are alone once more."; gameState.flags.hasCompanion = false; }
+                            return msg;
+                        }
+                    },
+                    {
+                        text: "Complete the Patrol",
+                        condition: () => !hasItem("Biscuits") || gameState.flags.ateSnacks,
+                        result: () => { gameState.runCount++; changeLocation('bottom'); return "You survive the patrol without a scratch."; }
+                    },
+                    {
+                        text: "Throw Biscuits / Eat Hastefully",
+                        condition: () => hasItem("Biscuits") && !gameState.flags.ateSnacks,
+                        result: () => { removeItem("Biscuits"); gameState.flags.ateSnacks = true; return "You devour the biscuits. The zombie, confused by the lack of scent, wanders into a bog."; }
+                    }
+                ]
+            },
+            'bottom': {
+                description: () => "You reach the <b>Far Gate</b>. The carriage waits to take you back to the manor.",
+                actions: [{ text: "Board Carriage", condition: () => true, result: () => { changeLocation('lift'); return "You climb into the carriage."; } }]
+            },
+            'lift': {
+                description: () => {
+                    const isRomanceRun = (gameState.runCount >= 3) && (gameState.runCount % 2 !== 0);
+                    if (isRomanceRun && !gameState.flags.hasCompanion) return "The carriage door opens. A <span class='romance'>Dashing Stranger</span> enters, bloody sword in hand. They bow.";
+                    if (gameState.flags.hasCompanion) return "You ride in the carriage with your intended, cleaning your weapons.";
+                    return "You ride the carriage alone, the wheels creaking in the gloom.";
+                },
+                actions: [
+                    {
+                        text: "Exchange Pleasantries",
+                        condition: () => (gameState.runCount >= 3) && (gameState.runCount % 2 !== 0) && !gameState.flags.hasCompanion,
+                        result: () => { gameState.flags.hasCompanion = true; return "You converse about the weather and the plague. They are charmed."; }
+                    },
+                    {
+                        text: "Remain Silent",
+                        condition: () => (gameState.runCount >= 3) && (gameState.runCount % 2 !== 0) && !gameState.flags.hasCompanion,
+                        result: () => { changeLocation('summit_hub'); return "You stare out the window. They depart at the circle."; }
+                    },
+                    {
+                        text: "Alight at Carriage Circle",
+                        condition: () => gameState.flags.hasCompanion || !((gameState.runCount >= 3) && (gameState.runCount % 2 !== 0)),
+                        result: () => { changeLocation('summit_hub'); return "The carriage halts."; }
+                    }
+                ]
+            }
+        };
+
+        // --- ENGINE ---
+        function render() {
+            document.getElementById('inventory-display').innerText = "Inv: " + (gameState.inventory.length ? gameState.inventory.join(", ") : "Empty");
+            document.getElementById('location-display').innerText = "Loc: " + gameState.currentLocation.toUpperCase().replace('_', ' ');
+            document.getElementById('run-display').innerText = "Patrols: " + gameState.runCount;
+
+            const scene = scenes[gameState.currentLocation];
+            const actionsDiv = document.getElementById('actions');
+            actionsDiv.innerHTML = '';
+
+            scene.actions.forEach(action => {
+                if (action.condition()) {
+                    const btn = document.createElement('button');
+                    btn.innerHTML = "❧ " + action.text;
+                    btn.onclick = () => handleAction(action);
+                    actionsDiv.appendChild(btn);
+                }
+            });
+        }
+
+        function handleAction(action) {
+            const resultText = action.result();
+            const scene = scenes[gameState.currentLocation];
+            let html = scene.description();
+            html += `<div class="notification">${resultText}</div>`;
+            document.getElementById('story-text').innerHTML = html;
+            render();
+        }
+
+        // --- INIT ---
+        document.getElementById('story-text').innerHTML = scenes['bedroom'].description();
+        render();
+
+    </script>
+</body>
+
+</html>

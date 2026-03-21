@@ -283,9 +283,17 @@ Den har tyvärr gått [förlorad för tidens tand](https://web.archive.org/web/2
 ## Spel
 Här finns små spel och interaktiva experiment.
 
-### 3D Tabletop Duel
+### 3D tabletop duel
 Ett 3D-spel för 2 eller 4 spelare på samma skärm. Byggt med Three.js.  
-[Här](spel/3dTableTopDuel.html)
+[Här](spel/3d_table_top_duel.html)
+
+### Powder day panic
+Ett litet interaktivt spel där du måste ta dig ner för berget.  
+[Här](spel/powder_day_panic.html)
+
+### Prejudice & Pestilence
+Samma som Powder day panic, men med 1700-tals miljö och zombier.
+[Här](spel/pride_and_pestilence.html)
 
 # License
 [CC BY-NC](https://creativecommons.org/licenses/by-nc/4.0/)

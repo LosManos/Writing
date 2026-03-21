@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Powder Day Panic v5</title>
+    <style>
+        /* --- CORE STYLES --- */
+        body {
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            overflow-x: hidden;
+            /* prevent scrollbars from hearts */
+        }
+
+        #game-container {
+            width: 100%;
+            max-width: 650px;
+            background-color: #2b2b2b;
+            border: 2px solid #5a5a5a;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            position: relative;
+            /* Ensure game sits below hearts if needed, though z-index handles it */
+            z-index: 10;
+        }
+
+        h1 {
+            text-align: center;
+            color: #89cff0;
+            margin-top: 0;
+            border-bottom: 1px solid #5a5a5a;
+            padding-bottom: 10px;
+        }
+
+        #status-bar {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85em;
+            color: #aaa;
+            margin-bottom: 15px;
+            padding: 8px;
+            background: #222;
+            border-radius: 4px;
+            border: 1px solid #444;
+        }
+
+        .stat-box {
+            margin-right: 15px;
+        }
+
+        #story-text {
+            min-height: 180px;
+            margin-bottom: 25px;
+            line-height: 1.6;
+            font-size: 1.1em;
+        }
+
+        /* Text highlights */
+        .highlight {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .item-found {
+            color: #ffd700;
+            font-weight: bold;
+        }
+
+        .danger {
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+
+        .romance {
+            color: #ff99cc;
+            font-weight: bold;
+        }
+
+        /* Actions */
+        #actions {
+            display: grid;
+            gap: 10px;
+        }
+
+        button {
+            background-color: #3d3d3d;
+            color: white;
+            border: 1px solid #555;
+            padding: 15px;
+            font-family: inherit;
+            font-size: 1em;
+            cursor: pointer;
+            text-align: left;
+            transition: all 0.2s;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #4d4d4d;
+            border-color: #89cff0;
+            padding-left: 20px;
+        }
+
+        .notification {
+            display: block;
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #333;
+            border-left: 4px solid #89cff0;
+            color: #89cff0;
+            font-style: italic;
+        }
+
+        /* --- HEART ANIMATION STYLES --- */
+        #heart-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            /* Lets clicks pass through so game still works */
+            z-index: 9999;
+            /* Sits on top of everything */
+            overflow: hidden;
+        }
+
+        .heart {
+            position: absolute;
+            top: -10%;
+            color: #ff4d4d;
+            /* Red/Pink */
+            user-select: none;
+            animation-name: fallDown;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+            /* stay at bottom when done */
+        }
+
+        @keyframes fallDown {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(110vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="game-container">
+        <h1>⛷️ POWDER DAY PANIC</h1>
+
+        <div id="status-bar">
+            <div class="stat-box" id="location-display">Loc: Bedroom</div>
+            <div class="stat-box" id="inventory-display">Inv: None</div>
+            <div class="stat-box" id="run-display">Runs: 0</div>
+        </div>
+
+        <div id="story-text">
+        </div>
+
+        <div id="actions">
+        </div>
+    </div>
+
+    <div id="heart-overlay"></div>
+
+    <script>
+        // --- GAME STATE ---
+        const gameState = {
+            currentLocation: 'bedroom',
+            runCount: 0,
+            inventory: ['Ski Boots'],
+            flags: {
+                foundKey: false, doorUnlocked: false, curtainsOpen: false,
+                foundPass: false, foundSkis: false, foundSnacks: false, ateSnacks: false,
+                hasCompanion: false
+            }
+        };
+
+        // --- HELPERS ---
+        function hasItem(item) { return gameState.inventory.includes(item); }
+        function removeItem(item) {
+            const index = gameState.inventory.indexOf(item);
+            if (index > -1) gameState.inventory.splice(index, 1);
+        }
+        function changeLocation(newLoc) { gameState.currentLocation = newLoc; }
+
+        // --- HEART ANIMATION FUNCTION ---
+        function triggerHeartSnow() {
+            const overlay = document.getElementById('heart-overlay');
+            overlay.innerHTML = ''; // Clear any existing hearts
+            const numHearts = 60; // How many hearts to spawn
+
+            for (let i = 0; i < numHearts; i++) {
+                const heart = document.createElement('div');
+                heart.classList.add('heart');
+                heart.innerHTML = '❤'; // Using unicode heart
+
+                // Randomize styles for natural look
+                heart.style.left = Math.random() * 100 + 'vw'; // horizontal position
+                heart.style.fontSize = (Math.random() * 30 + 20) + 'px'; // size between 20-50px
+
+                const duration = Math.random() * 5 + 4; // speed between 4-9 seconds
+                heart.style.animationDuration = duration + 's';
+
+                const delay = Math.random() * 3; // start delay 0-3 seconds
+                heart.style.animationDelay = delay + 's';
+
+                overlay.appendChild(heart);
+            }
+
+            // Optional: Clean up DOM after animation finishes (e.g., 10 seconds later)
+            setTimeout(() => { overlay.innerHTML = ''; }, 10000);
+        }
+
+
+        // --- SCENES DATA ---
+        const scenes = {
+            'bedroom': {
+                description: () => {
+                    let text = "You are in your <b>Bedroom</b>.";
+                    if (gameState.flags.hasCompanion) {
+                        text += " Your ski buddy is standing awkwardly near the door, holding their gear.";
+                    }
+                    if (!gameState.flags.curtainsOpen) text += " Curtains are closed.";
+                    else text += " Sunlight floods the room.";
+                    return text;
+                },
+                actions: [
+                    {
+                        // --- THE NEW ROMANCE ACTION ---
+                        text: "Invite your Friend to stay awhile... ❤",
+                        condition: () => gameState.flags.hasCompanion,
+                        result: () => {
+                            triggerHeartSnow(); // FIRE THE EFFECT!
+                            return "<span class='romance'>It's getting cozy in here!</span> They blush and drop their gear. The perfect end to a powder day.";
+                        }
+                    },
+                    {
+                        text: "Inspect Curtains",
+                        condition: () => !gameState.flags.curtainsOpen,
+                        result: () => {
+                            gameState.flags.curtainsOpen = true;
+                            return "You open the curtains. A <span class='highlight'>Silver Key</span> is on the ledge.";
+                        }
+                    },
+                    {
+                        text: "Take Key & Unlock",
+                        condition: () => gameState.flags.curtainsOpen && !gameState.flags.foundKey,
+                        result: () => {
+                            gameState.flags.foundKey = true;
+                            gameState.flags.doorUnlocked = true;
+                            return "You unlock the door.";
+                        }
+                    },
+                    {
+                        text: "Look Under Bed",
+                        condition: () => !gameState.flags.foundPass,
+                        result: () => {
+                            gameState.flags.foundPass = true;
+                            gameState.inventory.push("Lift Pass");
+                            return "Found the <span class='item-found'>Lift Pass</span>!";
+                        }
+                    },
+                    {
+                        text: "Enter Hallway",
+                        condition: () => gameState.flags.doorUnlocked,
+                        result: () => { changeLocation('hallway'); return "Moving to hallway..."; }
+                    },
+                    {
+                        text: "Try Door",
+                        condition: () => !gameState.flags.doorUnlocked,
+                        result: () => "Locked."
+                    }
+                ]
+            },
+            'hallway': {
+                description: () => "You are in the <b>Hallway</b> inside the lodge. <br>To the West is the Kitchen. <br>To the South is the Exit (to Summit Hub).",
+                actions: [
+                    {
+                        text: "Go to Bedroom",
+                        condition: () => true,
+                        result: () => { changeLocation('bedroom'); return "Heading to room."; }
+                    },
+                    {
+                        text: "Go to Kitchen",
+                        condition: () => true,
+                        result: () => { changeLocation('kitchen'); return "Heading to kitchen."; }
+                    },
+                    {
+                        text: "Check Gear Closet",
+                        condition: () => !gameState.flags.foundSkis,
+                        result: () => {
+                            gameState.flags.foundSkis = true;
+                            gameState.inventory.push("Skis");
+                            return "Got the <span class='item-found'>Skis</span>.";
+                        }
+                    },
+                    {
+                        text: "Go Outside (Summit Hub)",
+                        condition: () => true,
+                        result: () => { changeLocation('summit_hub'); return "You step out into the crisp air."; }
+                    }
+                ]
+            },
+            'kitchen': {
+                description: () => "You are in the <b>Kitchen</b>. " + (gameState.flags.hasCompanion ? "Your friend waits politely." : ""),
+                actions: [
+                    {
+                        text: "Take Granola Bar",
+                        condition: () => !gameState.flags.foundSnacks && !hasItem("Snacks"),
+                        result: () => {
+                            gameState.flags.foundSnacks = true;
+                            gameState.inventory.push("Snacks");
+                            gameState.flags.ateSnacks = false;
+                            return "You grabbed a <span class='item-found'>Granola Bar</span>.";
+                        }
+                    },
+                    {
+                        text: "Eat Snacks",
+                        condition: () => hasItem("Snacks"),
+                        result: () => { removeItem("Snacks"); gameState.flags.ateSnacks = true; return "You eat the snacks. Tasty."; }
+                    },
+                    {
+                        text: "Return to Hallway",
+                        condition: () => true,
+                        result: () => { changeLocation('hallway'); return "Back to the hall."; }
+                    }
+                ]
+            },
+            'summit_hub': {
+                description: () => {
+                    let txt = "You are at the <b>Summit Hub</b>, the central snowy area.<br><br><b>North:</b> The Lodge (Your room)<br><b>East:</b> The Peak Cafe<br><b>South:</b> The Slopes";
+                    if (gameState.flags.hasCompanion) txt += "<br><br>Your companion is adjusting their goggles.";
+                    return txt;
+                },
+                actions: [
+                    { text: "Enter The Lodge", condition: () => true, result: () => { changeLocation('hallway'); return "You enter the lodge."; } },
+                    { text: "Enter Peak Cafe", condition: () => true, result: () => { changeLocation('cafe'); return "You enter the cafe."; } },
+                    {
+                        text: "Ski Down the Mountain", condition: () => true,
+                        result: () => {
+                            if (hasItem("Skis") && hasItem("Lift Pass")) { changeLocation('slopes'); return "Let's ride!"; }
+                            return "You are missing your Skis or Lift Pass.";
+                        }
+                    }
+                ]
+            },
+            'cafe': {
+                description: () => "You are in the <b>Peak Cafe</b>. Smells like cocoa. Vending Machine in corner." + (gameState.flags.hasCompanion ? " Your friend points at the machine." : ""),
+                actions: [
+                    {
+                        text: "Buy Snacks",
+                        condition: () => hasItem("Lift Pass") && !hasItem("Snacks"),
+                        result: () => {
+                            gameState.inventory.push("Snacks"); gameState.flags.ateSnacks = false;
+                            return "You buy energy chews. <span class='item-found'>Snacks added.</span>";
+                        }
+                    },
+                    { text: "Go Outside (Summit Hub)", condition: () => true, result: () => { changeLocation('summit_hub'); return "Back into the cold."; } }
+                ]
+            },
+            'slopes': {
+                description: () => {
+                    if (hasItem("Snacks") && !gameState.flags.ateSnacks) {
+                        let msg = "<span class='danger'>WARNING!</span> A massive <span class='danger'>YETI</span> steps out! It smells your snacks.";
+                        if (gameState.flags.hasCompanion) msg += " Your companion screams!";
+                        return msg;
+                    }
+                    return gameState.flags.hasCompanion ? "You and your ski buddy are cruising the ridge." : "You are carving down the mountain.";
+                },
+                actions: [
+                    {
+                        text: "Look at the Yeti",
+                        condition: () => hasItem("Snacks") && !gameState.flags.ateSnacks,
+                        result: () => {
+                            changeLocation('bedroom');
+                            let msg = "<span class='danger'>PANIC!</span> The Yeti roars! You flee back to your room!";
+                            if (gameState.flags.hasCompanion) { msg += " You lost your friend in the chaos! Single again."; gameState.flags.hasCompanion = false; }
+                            return msg;
+                        }
+                    },
+                    {
+                        text: "Ski Down to Bottom",
+                        condition: () => !hasItem("Snacks") || gameState.flags.ateSnacks,
+                        result: () => { gameState.runCount++; changeLocation('bottom'); return "Pure adrenaline. You reach the bottom."; }
+                    },
+                    {
+                        text: "Quickly Eat/Share Snacks!",
+                        condition: () => hasItem("Snacks") && !gameState.flags.ateSnacks,
+                        result: () => { removeItem("Snacks"); gameState.flags.ateSnacks = true; return "You wolf down the snacks. The Yeti leaves."; }
+                    }
+                ]
+            },
+            'bottom': {
+                description: () => "You are at the <b>Bottom</b>. The lift is humming.",
+                actions: [{ text: "Take Ski Lift", condition: () => true, result: () => { changeLocation('lift'); return "You get in line for the lift."; } }]
+            },
+            'lift': {
+                description: () => {
+                    const isRomanceRun = (gameState.runCount >= 3) && (gameState.runCount % 2 !== 0);
+                    if (isRomanceRun && !gameState.flags.hasCompanion) return "A cute skier sits next to you on the lift. <span class='romance'>They smile.</span>";
+                    if (gameState.flags.hasCompanion) return "You ride the lift with your friend.";
+                    return "You ride the lift alone.";
+                },
+                actions: [
+                    {
+                        text: "Say Hello",
+                        condition: () => (gameState.runCount >= 3) && (gameState.runCount % 2 !== 0) && !gameState.flags.hasCompanion,
+                        result: () => { gameState.flags.hasCompanion = true; return "You chat. They are awesome! They join your party."; }
+                    },
+                    {
+                        text: "Ignore Them",
+                        condition: () => (gameState.runCount >= 3) && (gameState.runCount % 2 !== 0) && !gameState.flags.hasCompanion,
+                        result: () => { changeLocation('summit_hub'); return "You stay silent."; }
+                    },
+                    {
+                        text: "Get Off at Summit",
+                        condition: () => gameState.flags.hasCompanion || !((gameState.runCount >= 3) && (gameState.runCount % 2 !== 0)),
+                        result: () => { changeLocation('summit_hub'); return "You slide off at the top."; }
+                    }
+                ]
+            }
+        };
+
+        // --- ENGINE ---
+        function render() {
+            document.getElementById('inventory-display').innerText = "Inv: " + (gameState.inventory.length ? gameState.inventory.join(", ") : "Empty");
+            document.getElementById('location-display').innerText = "Loc: " + gameState.currentLocation.toUpperCase().replace('_', ' ');
+            document.getElementById('run-display').innerText = "Runs: " + gameState.runCount;
+
+            const scene = scenes[gameState.currentLocation];
+            const actionsDiv = document.getElementById('actions');
+            actionsDiv.innerHTML = '';
+
+            scene.actions.forEach(action => {
+                if (action.condition()) {
+                    const btn = document.createElement('button');
+                    btn.innerHTML = "> " + action.text;
+                    btn.onclick = () => handleAction(action);
+                    actionsDiv.appendChild(btn);
+                }
+            });
+        }
+
+        function handleAction(action) {
+            const resultText = action.result();
+            const scene = scenes[gameState.currentLocation];
+            let html = scene.description();
+            html += `<div class="notification">${resultText}</div>`;
+            document.getElementById('story-text').innerHTML = html;
+            render();
+        }
+
+        // --- INIT ---
+        document.getElementById('story-text').innerHTML = scenes['bedroom'].description();
+        render();
+
+    </script>
+</body>
+
+</html>
