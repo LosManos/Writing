@@ -290,6 +290,11 @@ Mycket enkelt point'n'click aventure-spel. Kort och helt meningslöst, men exemp
 Du börjar som dinosauriejägare men lär dig vad som är viktigt i livet.  
 [Här](spel/hunters_heart/hunters_heart.html)
 
+#### KokutsuKoKushi
+Ett textbaserat äventyrsspel (Text Adventure) med inbyggd redigerare.  
+Meningen är att användaren skall kunna bygga vidare och göra nya spel att ge till vännger.  
+[Här](spel/KokutsuKoKushi/index.html)
+
 #### Powder day panic
 Ett litet interaktivt spel där du måste ta dig ner för berget. Tips: Åk några gånger innan du ger upp.  
 [Här](spel/powder_day_panic.html)

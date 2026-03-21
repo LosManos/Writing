@@ -1,0 +1,577 @@
+:root {
+    --primary-bg: #0a0a0c;
+    --panel-bg: rgba(255, 255, 255, 0.05);
+    --accent-color: #7c4dff;
+    --accent-glow: rgba(124, 77, 255, 0.3);
+    --text-main: #e0e0e0;
+    --text-dim: #a0a0a0;
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --radius: 16px;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: var(--primary-bg);
+    color: var(--text-main);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+header {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--glass-border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.mode-toggle {
+    display: flex;
+    background: var(--panel-bg);
+    border-radius: 20px;
+    padding: 2px;
+    border: 1px solid var(--glass-border);
+}
+
+.mode-toggle button {
+    background: transparent;
+    border: none;
+    padding: 0.4rem 1rem;
+    border-radius: 18px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-dim);
+    transition: var(--transition);
+    cursor: pointer;
+    justify-content: center;
+}
+
+.mode-toggle button.active {
+    background: var(--accent-color);
+    color: white;
+    box-shadow: 0 0 10px var(--accent-glow);
+}
+
+header h1 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #fff, var(--text-dim));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.icon-btn {
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.icon-btn:hover {
+    background: var(--panel-bg);
+    box-shadow: none;
+    transform: scale(1.1);
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    overflow-y: auto;
+    padding-bottom: 2rem;
+}
+
+.room-image {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--radius);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: var(--transition);
+}
+
+.room-image:hover {
+    transform: scale(1.02);
+    border-color: var(--accent-color);
+    box-shadow: 0 15px 40px var(--accent-glow);
+}
+
+.room-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.edit-input {
+    background: var(--panel-bg);
+    border: 1px solid var(--accent-color);
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.edit-textarea {
+    background: var(--panel-bg);
+    border: 1px solid var(--glass-border);
+    color: var(--text-main);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    padding: 1rem;
+    border-radius: var(--radius);
+    width: 100%;
+    min-height: 100px;
+    resize: vertical;
+}
+
+.description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--text-main);
+    background: var(--panel-bg);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(10px);
+}
+
+.interactions {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+h2 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: var(--text-dim);
+    margin-bottom: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-btn {
+    background: var(--accent-color);
+    border: none;
+    color: white;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 0 5px var(--accent-glow);
+}
+
+.btn-group {
+    display: flex;
+    gap: 0.5rem;
+    align-items: stretch;
+}
+
+.btn-group button:first-child {
+    flex: 1;
+}
+
+.edit-btn-small {
+    background: var(--panel-bg);
+    border: 1px solid var(--glass-border);
+    color: var(--text-dim);
+    padding: 0 0.75rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.edit-btn-small:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.exits,
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+button {
+    background: var(--panel-bg);
+    border: 1px solid var(--glass-border);
+    color: white;
+    padding: 1rem 1.25rem;
+    border-radius: var(--radius);
+    font-size: 1rem;
+    text-align: left;
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button:hover:not(:disabled) {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--accent-color);
+    box-shadow: 0 0 15px var(--accent-glow);
+    transform: translateY(-2px);
+}
+
+button:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    filter: grayscale(1);
+}
+
+.action-btn {
+    border-left: 4px solid var(--accent-color);
+}
+
+footer {
+    margin-top: auto;
+    padding: 1rem;
+    background: var(--panel-bg);
+    border-top: 1px solid var(--glass-border);
+    border-radius: var(--radius) var(--radius) 0 0;
+    backdrop-filter: blur(10px);
+}
+
+.inventory {
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+/* Modal Styles */
+#modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 1rem;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.modal {
+    background: #121214;
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius);
+    padding: 2rem;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.modal h2 {
+    margin-bottom: 0;
+    color: white;
+}
+
+textarea {
+    width: 100%;
+    height: 300px;
+    background: var(--primary-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+    color: var(--text-main);
+    padding: 1rem;
+    font-family: monospace;
+    font-size: 0.8rem;
+    resize: none;
+}
+
+.modal-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.modal-actions button {
+    justify-content: center;
+    border-left: none;
+}
+
+.modal label {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: -1rem;
+}
+
+.room-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--panel-bg);
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid var(--glass-border);
+}
+
+.room-item-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.small-btn {
+    background: var(--panel-bg);
+    border: 1px solid var(--glass-border);
+    color: white;
+    padding: 0.4rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.small-btn:hover {
+    border-color: var(--accent-color);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.small-btn.delete-room:hover {
+    border-color: #ff4d4d;
+    background: rgba(255, 77, 77, 0.1);
+}
+
+#close-modal {
+    background: transparent;
+    border-color: var(--glass-border);
+    color: var(--text-dim);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--glass-border);
+    border-radius: 3px;
+}
+
+@media (min-width: 768px) {
+    .game-container {
+        max-width: 600px;
+        margin: 0 auto;
+        border-left: 1px solid var(--glass-border);
+        border-right: 1px solid var(--glass-border);
+    }
+}
+
+/* Inventory Styles */
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inventory-indicator {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--accent-color);
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius);
+    background: var(--panel-bg);
+    border: 1px solid var(--glass-border);
+    transition: var(--transition);
+}
+
+.inventory-indicator:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--accent-color);
+}
+
+.inventory-count {
+    background: var(--accent-color);
+    color: white;
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 10px;
+    min-width: 20px;
+    text-align: center;
+}
+
+/* Item List in Inventory Modal */
+.item-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.item-card {
+    background: var(--panel-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius);
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.item-card:hover {
+    border-color: var(--accent-color);
+    transform: translateY(-4px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.item-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.item-name {
+    font-weight: 600;
+    color: var(--text-main);
+    font-size: 0.9rem;
+}
+
+/* Logic Editors (Conditions/Effects) */
+.logic-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    border: 1px solid var(--glass-border);
+}
+
+.logic-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    background: var(--panel-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+    position: relative;
+}
+
+.logic-item-row {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.logic-item-row select,
+.logic-item-row input {
+    flex: 1;
+    padding: 0.5rem;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--glass-border);
+    border-radius: 4px;
+    color: white;
+}
+
+.remove-logic-btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: transparent;
+    border: none;
+    color: #ff4d4d;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 0.25rem;
+}
+
+.add-logic-btn {
+    align-self: flex-start;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+    background: var(--panel-bg);
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: var(--transition);
+    margin-bottom: 1rem;
+}
+
+.add-logic-btn:hover {
+    background: var(--accent-color);
+    color: white;
+}
+
+.modal {
+    max-height: 90vh;
+    overflow-y: auto;
+}

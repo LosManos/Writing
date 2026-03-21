@@ -1,0 +1,76 @@
+{
+    "metadata": {
+        "title": "The Mystery of Kokutsu",
+        "author": "Njord",
+        "version": "1.0.0",
+        "description": "An ancient mystery awaits in the shadows."
+    },
+    "initialState": {
+        "currentRoomId": "entrance",
+        "inventory": [],
+        "vars": {
+            "gate_unlocked": false
+        }
+    },
+    "rooms": {
+        "entrance": {
+            "id": "entrance",
+            "name": "Temple Entrance",
+            "image": "games/mystery/temple_entrance.png",
+            "description": "You stand before a massive stone gate. The carvings seem to pulse with a faint light.",
+            "exits": [
+                {
+                    "label": "Enter the Temple",
+                    "targetRoomId": "main_hall",
+                    "conditions": [
+                        {
+                            "type": "var_equals",
+                            "key": "gate_unlocked",
+                            "value": true
+                        }
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "label": "Touch the Carvings",
+                    "effects": [
+                        {
+                            "type": "set_var",
+                            "key": "gate_unlocked",
+                            "value": true
+                        },
+                        {
+                            "type": "play_sound",
+                            "value": "unlock.mp3"
+                        }
+                    ]
+                }
+            ],
+            "items": [
+                "rusty_key"
+            ]
+        },
+        "main_hall": {
+            "id": "main_hall",
+            "name": "The Great Hall",
+            "image": "games/mystery/great_hall.png",
+            "description": "A cavernous space filled with dust motes dancing in shafts of light from the roof windows.",
+            "exits": [
+                {
+                    "label": "Go back to the entrance",
+                    "targetRoomId": "entrance"
+                }
+            ],
+            "actions": []
+        }
+    },
+    "items": {
+        "rusty_key": {
+            "id": "rusty_key",
+            "name": "Rusty Key",
+            "description": "A small, weathered key made of iron. It looks like it could open an old gate.",
+            "actions": []
+        }
+    }
+}

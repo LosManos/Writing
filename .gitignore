@@ -1,2 +1,10 @@
 # macOS
 .DS_Store
+
+# VsCode
+.vscode
+
+# Kokutsu build artifacts
+spel/KokutsuKoKushi/node_modules/
+spel/KokutsuKoKushi/dist/
+spel/KokutsuKoKushi/dist-ssr/
