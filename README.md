@@ -308,5 +308,9 @@ Ett 3D-spel för 2 eller 4 spelare på samma skärm. Multiplayer fungerar bara p
 Byggt med Three.js. Faktiskt riktigt lyckat!   
 [Här](spel/3d_table_top_duel.html)
 
+### LehmanSyoKameralla
+Ett rent klientsidigt/web program för att utbyta data mellan två enheter via QR-koder.   Det är tänkt som en idé till ett spel.  
+[Här](spel/LehmanSyoKameralla/index.html)
+
 # License
 [CC BY-NC](https://creativecommons.org/licenses/by-nc/4.0/)
