@@ -12,7 +12,7 @@ This document outlines the requirements and implementation details for a purely 
 
 ## Technical Stack
 * **Frontend Core:** HTML5, CSS3, Vanilla JavaScript (or a lightweight framework if preferred, but vanilla is sufficient).
-* **QR Code Generation:** A client-side library such as `qrcode.js` or `qrcode` (npm pkg).
+* **QR Code Generation:** A client-side design library such as `qr-code-styling` (for advanced aesthetics like gradients, custom shapes, and embedded logos) rather than standard black-and-white barcodes.
 * **QR Code Scanning:** A client-side library such as `html5-qrcode` or `jsQR`.
 * **Hosting:** Any static file host (e.g., GitHub Pages, Vercel, Netlify). MUST be served over HTTPS.
 
@@ -25,9 +25,10 @@ This document outlines the requirements and implementation details for a purely 
 
 ### 2. QR Code Generation (Generator Mode)
 * Provide an input form for the user.
-* On submit, serialize the data payload and pass it to the QR generation library.
-* Render the QR code prominently on the screen (e.g., in a large HTML `<canvas>` or `<img>` element).
-* Ensure high contrast for the QR code (black on white).
+* On submit, serialize the data payload and pass it to the QR generation library (`qr-code-styling`).
+* Render the aesthetically enhanced QR code prominently on the screen.
+* **Design is key:** Use custom colors, gradients, rounded dot patterns, and even embed a logo in the center of the QR code. Make it look like a piece of art rather than a standard barcode.
+* Note: While maximizing aesthetics, ensure there is still enough contrast for the scanner device to read it reliably.
 
 ### 3. QR Code Scanning (Scanner Mode)
 * Utilize the `navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment" } })` API to access the rear camera.
