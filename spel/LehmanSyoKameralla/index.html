@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Data Exchange</title>
+    
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- qr-code-styling for stylish generation -->
+    <script src="https://cdn.jsdelivr.net/npm/qr-code-styling@1.6.0-rc.1/lib/qr-code-styling.js"></script>
+    
+    <!-- html5-qrcode for robust scanning -->
+    <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+
+    <!-- App Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+    </div>
+
+    <main class="app-container">
+        <header class="app-header">
+            <h1>PeerLink</h1>
+            <p>Secure visual data exchange</p>
+        </header>
+
+        <div class="mode-toggle">
+            <button id="tab-generate" class="tab-btn active">Create</button>
+            <button id="tab-scan" class="tab-btn">Scan</button>
+        </div>
+
+        <!-- GENERATOR VIEW -->
+        <section id="view-generate" class="view-section active">
+            <div class="card glass-card">
+                <div class="input-group">
+                    <label for="data-input">Message Payload</label>
+                    <textarea id="data-input" placeholder="Enter data to share..." rows="3"></textarea>
+                </div>
+                <button id="btn-generate" class="primary-btn">Generate QR</button>
+            </div>
+
+            <div id="qr-display-container" class="card glass-card qr-card hidden">
+                <h2 class="section-title">Scan to Receive</h2>
+                <div id="qr-canvas"></div>
+                <p class="helper-text">Point friend's camera at this code</p>
+            </div>
+        </section>
+
+        <!-- SCANNER VIEW -->
+        <section id="view-scan" class="view-section hidden">
+            <div class="card glass-card">
+                <div id="scanner-container">
+                    <div id="qr-reader"></div>
+                </div>
+                <button id="btn-stop-scan" class="secondary-btn hidden">Stop Scanning</button>
+            </div>
+        </section>
+
+        <!-- AUGMENTATION VIEW (Shown after successful scan) -->
+        <section id="view-augment" class="view-section hidden">
+            <div class="card glass-card">
+                <h2 class="section-title">Data Received!</h2>
+                <div class="received-data-box">
+                    <p class="label">From Peer:</p>
+                    <p id="received-text" class="data-text"></p>
+                </div>
+
+                <div class="input-group">
+                    <label for="augment-input">Add Your Data</label>
+                    <textarea id="augment-input" placeholder="Type your response or addition..." rows="3"></textarea>
+                </div>
+                
+                <div class="button-group row">
+                    <button id="btn-combine" class="primary-btn full-width">Combine & Share</button>
+                    <button id="btn-cancel-augment" class="secondary-btn full-width">Cancel</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
