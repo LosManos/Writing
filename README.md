@@ -310,7 +310,7 @@ Byggt med Three.js. Faktiskt riktigt lyckat!
 
 ### LehmanSyoKameralla
 Ett rent klientsidigt/web program för att utbyta data mellan två enheter via QR-koder.   Det är tänkt som en idé till ett spel.  
-[Här](spel/LehmanSyoKameralla/index.html)
+[Här](https://losmanos.github.io/lehman-syo-kameralla/)
 
 # License
 [CC BY-NC](https://creativecommons.org/licenses/by-nc/4.0/)
