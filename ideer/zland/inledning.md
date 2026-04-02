@@ -38,4 +38,4 @@ Det var därför CCC inte fick komma in.
 
 Det hela hade börjat i eufori med AAA, AAA:s bästa kompis CCC och AAA:s och CCC:s bästa kompis BBB på svensexa. Det skulle jagas, skaffas trofé och fantastiska historier på bröllopet.
 
-Det hela hade börjat i eufori med AAA, AAA:s bästa kompis CCC och AAA:s och CCC:s bästa kompis BBB på äventyr. BBB skulle gifta sig och hans liv skulle förändras. Nu gifte sig aldrig BBB men hans liv förändrades. Förkortades. Förändrades. CCC däremot bara dog. Han blev uppäten. Av BBB. Det lägger sordin på stämningen.
+Det hela hade börjat i eufori med AAA, AAA:s bästa kompis CCC och AAA:s och CCC:s bästa kompis BBB på äventyr. BBB skulle gifta sig och hans liv skulle förändras. Nu gifte sig aldrig BBB men hans liv förändrades. Egen klumpighet blev hans fall. Förkortades. Förändrades. CCC däremot bara dog. Han blev uppäten. Av BBB. Det lägger sordin på stämningen.
