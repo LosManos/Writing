@@ -288,7 +288,7 @@ Här finns små spel och interaktiva experiment.
 #### The hunter's heart
 Mycket enkelt point'n'click aventure-spel. Kort och helt meningslöst, men exempel på hur lätt man kan bygga spel.  
 Du börjar som dinosauriejägare men lär dig vad som är viktigt i livet.  
-[Här](spel/hunters_heart/hunters_heart.html)
+[Här](spel/the_hunters_heart.html)
 
 #### KokutsuKoKushi
 Ett textbaserat äventyrsspel (Text Adventure) med inbyggd redigerare.  
