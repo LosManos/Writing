@@ -312,5 +312,9 @@ Byggt med Three.js. Faktiskt riktigt lyckat!
 Ett rent klientsidigt/web program för att utbyta data mellan två enheter via QR-koder.   Det är tänkt som en idé till ett spel.  
 [Här](https://losmanos.github.io/lehman-syo-kameralla/)
 
+### BiriyadoOSuruUshi
+Se [LehmanSyoKameralla](LehmanSyoKameralla). Detta är en implementation där man kan spela en biljard med varandra via två telefoner.
+[Här](https://losmanos.github.io/BiriyadoOSuruUshi/)
+
 # License
 [CC BY-NC](https://creativecommons.org/licenses/by-nc/4.0/)
