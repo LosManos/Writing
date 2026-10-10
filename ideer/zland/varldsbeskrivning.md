@@ -1,0 +1,63 @@
+# Världsbeskrivning: Zland (Zafariland)
+
+En omfattande guide till Manhattan som världens första och största zombie-reservat och nöjespark.
+
+## 1. Bakgrund & Uppkomst
+Efter ett storskaligt Z-utbrott i Nordamerika stod USA inför en humanitär och logistisk katastrof. Manhattan, New York, blev tidigt en av de mest infekterade zonerna och stängdes av helt när militären förlorade kontrollen.
+
+Den ryska affärsmannen **@affman** (eller "Entreprenören") erbjöd en kontroversiell lösning: Att köpa hela ön för en symbolisk summa mot löftet att säkra den, underhålla murarna och förvara de infekterade där istället för att avrätta dem. Detta löste det etiska problemet för familjer som inte ville att deras anhöriga skulle dekapiteras – de placerades i "förvar" på Manhattan i väntan på ett botemedel.
+
+## 2. Geografi & Inhägnad
+*   **Vattnet som barriär:** Istället för massiva murar runt hela ön fungerar Hudson- och East River som naturligt skydd. Strömmarna och djupet håller de flesta infekterade kvar på ön, även om enstaka stängsel kan finnas längs vissa kajer för att hindra dem från att trilla i och sköljas upp på fastlandet.
+*   **Bron & Personslussen:** En av Manhattans broar har byggts om till en massiv, högsäkerhetssluss. Detta är den enda lagliga vägen in till och ut ur Zland. Här sker all kontroll av personal, turister och forskare.
+*   **Bepansrade transporter:** All rörelse för turister sker i specialbyggda, bepansrade bussar som utgår från personslussen. 
+*   **Säkra zoner:** Innanför slussen finns ett antal välbevakade "säkra zoner" där turister och arbetare kan röra sig fritt utan omedelbar risk.
+
+## 3. Ekonomi & Turism (Zafariland)
+Manhattan har förvandlats till världens mest exklusiva och makabra nöjespark, ofta kallad **Zafariland**.
+
+*   **Jakt-faciliteter & Utrustning:** Bussarna tar turister från slussen till särskilda lokaler där de blir utrustade för jakt. Ett standardpaket inkluderar:
+    1.  **Fordon:** En förstärkt eller bepansrad bil utrustad med larm och surroundkameror. Kamerorna används för att övervakare ska kunna styra eventuella räddningsinsatser, men också för att kontrollera att föraren inte kör på zombier som man inte har betalat för.
+    2.  **Vapensystem:** En bössa med kikarsikte och inbyggd kamera som är ständigt uppkopplad. Systemet säkerställer att jägaren håller sig till sin kvot (oftast 1 zombie per tillfälle, om man inte är mycket förmögen) och att ingen råkar skjuta en kändis (orange-målade).
+    3.  **Fastställd rutt:** Varje jaktlag tilldelas en specifik rutt som de måste hålla sig till för att undvika att olika grupper hamnar i varandras siktlinjer eller går in i förbjudna zoner.
+
+*   **Jakt & Sport:** Att "jaga" och skjuta zombier är tillåtet mot en hög avgift. Det finns dock strikta kvoter för att inte utrota "beståndet". Att döda en zombie helt kostar extra.
+*   **Kändissafari:** Zombitologer och fotografer jagar bilder på förvandlade kändisar. Berömda zombies är ofta märkta med **orange färg** (eller behåller sina kännetecknande kläder) så att turister inte råkar skjuta dem av misstag.
+
+## 4. Gastronomi & Varumärken
+*   **BigZ:** Den ikoniska restaurangkedjan inne i/vid Zland. Deras signaturhamburgare ("BigZ") ryktas innehålla Z-kött för att hålla priset nere, vilket snarare har ökat ställets popularitet än tvärtom. Man kan sitta här och spotta kändisar bakom pansarglas.
+*   **Z-merch:** Allt från "Jag överlevde Zafariland"-tröjor till diplom efter avklarad 8-dagars karantän.
+
+## 5. Lagar, Etik & Säkerhet
+*   **Karantänhotellet ("The Eight"):** Alla som lämnar Manhattan måste sitta i 8 dagars karantän (inkubationstiden tros vara 7 dagar). Hotellet är en blandning av lyxresort och högsäkerhetsfängelse.
+    *   **Separation:** Gästerna bor i exklusiva sviter, men den sociala ytan är uppdelad med genomskinliga barriärer. Man kan se och prata med andra gäster, men aldrig röra dem fysiskt.
+    *   **Dagliga kontroller:** Varje morgon genomgår gästerna obligatoriska blodprover och synundersökningar (reflexer och ögonfärg är tidiga tecken).
+    *   **Underhållning:** Dagarna fylls med lyxmat, spa-behandlingar (utan mänsklig beröring, mekaniska massagebänkar) och live-feeds från jaktlagen inne i staden.
+    *   **Diplomet:** De som klarar den åttonde dagen får sitt "Jag överlevde!"-diplom och en eskort ut till fastlandet. De som visar symptom... försvinner diskret via en separat hiss ner tillbaks till Manhattan.
+
+Denna åtta-dagars karantän (inkubationstiden) användes av svensexa-gänget som en täckmantel i sin "under radarn"-plan. De sa till sina respektive att de skulle åka till Europa och att internetuppkopplingen skulle vara usel i en vecka – den tid de egentligen planerade att spendera i karantänen efter "jakten".
+
+## 6. Mystiken kring Manhattan (Övergivna zoner)
+Djupt inne i staden finns platser där inga turister rör sig. Endast zombier. Det finns områden där man inte får jaga.
+*   **Militära experiment:** Det ryktas om underjordiska baser där nanoteknik testas på de döda. Teorier finns om att nanorobotar kan användas för att bota cancer, men att bieffekten skapar zombier som reagerar på specifika ljusfrekvenser.
+
+## 7. Rollfigurer (Svensexan)
+Denna grupp av tre vänner åkte till Manhattan för att fira en svensexa med målet att skjuta varsin zombie. Allt gick katastrofalt fel och de blev symbolen för "turister som överskattar sin förmåga".
+
+*   **AAA (Protagonisten):** Den enda mänskliga överlevaren som lämnats kvar på Manhattan. Han lever ett surrealistiskt liv som eremit i en lyxig takvåning (penthouse) vid Central Park, där han har anlagt en marijuana-odling på taket. AAA plågas av skuld efter incidenten under svensexan. Han skäms så mycket för vad som hänt att han inte förmår åka ut i verkligheten igen, utan gömmer sig i staden. Efter den ödesdigra "jakten" satt han och hade sådan ångest att han missade den obligatoriska återsamlingen med de bepansrade bussarna. Han höll sig sedan undan så pass väl att han antogs vara död eller zombifierad av myndigheterna.
+    *   **Överlevnadsstrategi:** AAA kan röra sig relativt ostörd bland både människor (vakter/turister) och zombier genom att bära vaktmästarkläder märkta "Zafariland" som han hittat i ett förråd. Han har även en mer teatralisk outfit: han klär ut sig till en kändis-zombie med orange dok (tygstycke) för att lura turister att han bara är en del av "beståndet".
+    *   **Vardag:** AAA besöker sina zombifierade vänner och har förvandlat museibesöken till sin främsta sociala ritual.
+*   **BBB (Brudgummen):** Han som skulle gifta sig. BBB föll offer för zombies på grund av sin egen klumpighet under svensexan, och är nu instängd i det stora glasterrariet på **American Museum of Natural History** som tidigare hyste en **kungskobra**. Museet är normalt sett helt stängt för turister och används som ett sorteringscenter för "unika objekt" (kändisar eller anatomiskt intressanta zombies). Detta har blivit AAA:s personliga "besöksrum" där han för långa monologer med sin stumme vän. Under besöken blåser AAA in marijuana-rök genom monteras ventilation, vilket får BBB att reagera med rörelser eller fascination för rökens slingrande – en makaber spegling av deras forna vänskap genom en glasbarriär.
+*   **CCC (Vännen):** Den tredje vännen. AAA vet till en början inte om CCC lever eller har blivit en zombie, då de separerades under kaoset. AAA letar febrilt efter honom i stadsdelarna kring deras ursprungliga kraschplats. När han väl hittar CCC som zombie, bestämmer han sig för att måla honom orange för att skydda honom från rika turister och kändis-spottare – men att fånga och "styla" en fientlig zombie är en livsfarlig utmaning.
+
+*   **Flickvännerna (Infiltratörerna):**
+*   **SSS (Väninnorna / Infiltratörerna):** Gruppen som tagit sig in för att hitta sanningen.
+    *   **EEE (Bruden / BBB:s blivande fru):** EEE köpte ursprungligen lögnen om killarnas "digital detox" i Europa, vilket gör henne ursinnig nu när sanningen har börjat läcka fram. Hon är "duktigt irriterad" på BBB för att han ljög och försatte sig i denna situation – en irritation hon skäms över eftersom han nu är en zombie. Hon bär på en kall vrede och ett behov av att exponera Zafarilands inhumanitet för världen som visselblåsare.
+    *   **FFF (CCC:s fästmö):** EEE:s följeslagare. FFF är mer emotionell och slits mellan hopp och total hopplöshet. Där EEE vill exponera systemet, vill FFF bara se CCC en sista gång. FFF är den som lättast dras med i parkens "magi" och lockas av kändissafarin, vilket skapar spänningar mellan henne och EEE.
+    *   **Konflikten med spektaklet:** EEE upplever en surrealistisk intern kamp. När de ser kändis-zombies som Bill Murray, kan hon inte låta bli att dras med i fascinationen för ett kort ögonblick – det är en del av mänsklig natur att bli "starstruck". Men sekunden efter fylls hon av självhat och avsky för att hon låter sig roas av den industri som håller hennes vänner och fästman fångna. Hon hatar Bill Murray för att han är så karismatisk även som död, och hon hatar sig själv för att hon nästan glömde varför hon är där.
+    *   **Uppdraget (Musei-infiltrationen):** EEE lämnar FFF vid en souvenirbutik för att utföra sin dumdristiga avstickare till det avspärrade naturhistoriska museet. Hon lyckas ta sig in i de mörka gallerierna med målet att dokumentera hur @affman behandlar de döda som "samlarobjekt". 
+    *   **Mötet vid glaset:** Inne i museet hittar hon BBB i kungskobra-tanken. Chocken av att se sin fästman bakom glas förstärks när hon ser en kvarlämnad liten anteckning (kanske ett internt skämt på en papperslapp) fastklistrad på monterglaset. Hon känner genast igen AAA:s handstil. Hon inser att AAA är vid liv, på insidan, och att han har besökt BBB.
+    *   **AAA:s skugga:** Från galleriets mörka balkonger ser AAA henne. Skammen över att ha överlevt, skammen över sitt nya liv och minnet av deras gemensamma förflutna gör att han inte vågar ge sig till känna. Han betraktar henne som ett spöke från sitt tidigare liv medan han döljer sin orangea kändis-mask i skuggan. Han inser att hon har hittat spåren efter honom.
+
+## 8. Tematik & Ton
+Tonen är en blandning av mörk framtidsvision och absurd humor. Manhattan fungerar som en spegel för världspolitikens extremkapitalism och murbygge, men kärnan i historien är AAA:s personliga resa genom skuld och hans surrealistiska vardag bland de döda. Inga fasta "överlevnadsregler" – bara ren improvisation och desperation i en färgstark men ruttnande värld.

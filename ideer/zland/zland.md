@@ -54,26 +54,25 @@ Vapnen hade kameror som visade vad som hände.
 Det uppstod en manlighetsrit att gå ur bilen och döda Z. Med gevär. Eller med vad man hittade. Egna vapen var förbjudna.
 
 ´Det blev en populär svensexa att spota Z och skjuta en Z. Eller en Z per deltagare, för de mer burgna.  
-@A, @B och @C är på svensexa. De planerar att skjuta en Z var. @C skall gifta sig och @A och @B står för fiolerna.
+AAA, CCC och BBB är på svensexa. De planerar att skjuta en Z var. BBB skall gifta sig och AAA och CCC står för fiolerna.
 
-Något går fel.  
-@C blir dödad av Z. Egen klumpighet blev hans fall.  
-@B blir dödad av Z. @A kunde ha räddat men blev skraj och vågade inte.  
-@A tar på sig skulden för @Bs död och känner stor skuld till @Cs frånfälle.
+BBB blir dödad av Z. Egen klumpighet blev hans fall.  
+CCC blir dödad av Z. AAA kunde ha räddat men blev skraj och vågade inte.  
+AAA tar på sig skulden för CCC:s död och känner stor skuld till BBB:s frånfälle.
 
-@A skäms och åker inte ut igen utan gömmer sig i Zland. Gör så det ser ut som alla blivit dödade/uppätna.
+AAA skäms och åker inte ut igen utan gömmer sig i Zland. Gör så det ser ut som alla blivit dödade/uppätna.
 
-Det går flera månader, år, och @A bor nu i Zland. Har änna glömt av sitt gamla liv.
+Det går flera månader, år, och AAA bor nu i Zland. Har änna glömt av sitt gamla liv.
 
 ???Hur får A Mat????
 
-@A odlar mat och har hittat förråd.  
+AAA odlar mat och har hittat förråd.  
 Han utforskar staden och har hittat var militären håller till.  
 Han spotar kändizar.
 
-@A hittar @C och lyckas fånga honom. @C får vara i en bur som sällskap till @A. Dialogen är en monolog. Gutturala ljud och grymtningar är inget språk @A förstår.  
-@A odlar mariuana. I odlingsfältet är buren med @C. @A röker på och pratar med @C. Knäppt beteende.
+AAA hittar BBB och lyckas fånga honom. BBB får vara i en bur som sällskap till AAA. Dialogen är en monolog. Gutturala ljud och grymtningar är inget språk AAA förstår.  
+AAA odlar mariuana. I odlingsfältet är buren med BBB. AAA röker på och pratar med BBB. Knäppt beteende.
 
-@A är övertygat om att @B är död. Men hittar honom. Vill, men lyckas inte fånga @B. Har @B instängd-ish i stadsdelen, kvarteret, kring där @A bor.  
+AAA är övertygat om att CCC är död. Men hittar honom. Vill, men lyckas inte fånga CCC. Har CCC instängd-ish i stadsdelen, kvarteret, kring där AAA bor.  
 Kompisgänget är änna samlat igen.
 
