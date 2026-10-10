@@ -249,6 +249,9 @@ Misstänker en dagdröm som är grunden till denna. I mitt hövve heter den Zomb
 En samling idéer kring att vara strandsatt i rymden, mänsklighetens utrotande, och jag vet inte vad.  
 [Här](ideer/atervandarna/atervandarna.html)
 
+### Översvämning
+Det är översvämning och Bengt hittar på att sälja grannarnas möbler som står på tork, som practical joke.
+[Här](ideer/oversvamning/oversvamning.html)
 ## Borta
 Färdiga historier som har försvunnit med tiden.
 
