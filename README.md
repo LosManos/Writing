@@ -257,7 +257,7 @@ Färdiga historier som har försvunnit med tiden.
 
 ### Reboot
 En historia om när jag ominstallerade en dator hemma. MIna anteckningar säger att den kan vara rolig om man gillar datorer.  
-[Förlorad för tidens tand](https://web.archive.org/web/20051015000000*/http://hem.passagen.se/olafj/noveller/reeboot.htm) Någon med mer XP än jag kan kanske få fram den?
+[Här](fardiga/reboot.html).
 
 ### Rulla kulan i evighet
 En mycket kort historia, inspirerad av en tjej som inte var jättesmart.  
