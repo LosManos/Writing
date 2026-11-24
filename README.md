@@ -257,7 +257,7 @@ Färdiga historier som har försvunnit med tiden.
 
 ### Reboot
 En historia om när jag ominstallerade en dator hemma. MIna anteckningar säger att den kan vara rolig om man gillar datorer.  
-[Här](fardiga/reboot.html).
+[Här](fardiga/reboot/reboot.html).
 
 ### Rulla kulan i evighet
 En mycket kort historia, inspirerad av en tjej som inte var jättesmart.  
